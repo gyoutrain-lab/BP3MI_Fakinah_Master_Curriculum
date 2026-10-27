@@ -429,7 +429,7 @@
         .transcript-header-title h2 { margin: 0; color: var(--primary-color); font-size: 1.3rem; text-transform: uppercase; }
         .transcript-header-title p { margin: 4px 0 0 0; font-size: 0.85rem; color: #475569; }
 
-        /* Styling Sertifikat Resmi dengan Header Logo Proporsional */
+        /* Styling Sertifikat Resmi */
         .certificate-card {
             background: #fffdfa;
             border: 10px solid #1e3a8a;
@@ -937,19 +937,19 @@
         <div id="certificatePrintArea" class="certificate-card">
             <table class="cert-header-table">
                 <tr>
-                    <!-- Lambang Garuda di Sisi Kiri -->
+                    <!-- Garuda Pancasila di Sisi Kiri -->
                     <td style="width: 90px; text-align: left;">
-                        <img src="https://raw.githubusercontent.com/gyoutrain-lab/assets/main/garuda.webp" alt="Garuda Pancasila" style="width: 75px; height: 75px; object-fit: contain;" />
+                        <img src="https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/garuda.webp" alt="Garuda Pancasila" style="width: 75px; height: 75px; object-fit: contain;" crossorigin="anonymous" />
                     </td>
                     <td style="text-align: center;">
                         <div class="cert-org-title">AKADEMI KEPERAWATAN (AKPER) FAKINAH BANDA ACEH & BP3MI ACEH</div>
                         <div class="cert-subtitle" style="margin-bottom:0;">Program Peningkatan Kapasitas & Kompetensi Calon Pekerja Migran Sektor Kesehatan (640 JPL)</div>
                     </td>
-                    <!-- Logo BP3MI & AKPER Fakinah di Sisi Kanan -->
+                    <!-- Logo BP3MI Aceh & Akper Teungku Fakinah di Sisi Kanan -->
                     <td style="width: 150px; text-align: right;">
                         <div style="display: flex; gap: 8px; justify-content: flex-end; align-items: center;">
-                            <img src="https://raw.githubusercontent.com/gyoutrain-lab/assets/main/BP3MI.jpg" alt="Logo BP3MI Aceh" style="width: 50px; height: 50px; object-fit: contain; border-radius: 4px;" />
-                            <img src="https://raw.githubusercontent.com/gyoutrain-lab/assets/main/Fakinah.jpg" alt="Logo AKPER Fakinah" style="width: 50px; height: 50px; object-fit: contain; border-radius: 4px;" />
+                            <img src="https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/BP3MI.jpg" alt="Logo BP3MI Aceh" style="width: 50px; height: 50px; object-fit: contain; border-radius: 4px;" crossorigin="anonymous" />
+                            <img src="https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/Fakinah.png" alt="Logo AKPER Fakinah" style="width: 50px; height: 50px; object-fit: contain; border-radius: 4px;" crossorigin="anonymous" />
                         </div>
                     </td>
                 </tr>
@@ -1131,17 +1131,17 @@
         { id: "final_sim", name: "9. Integrated Simulation & Final Assessment", totalJpl: 28, cluster: "Integrasi & Portofolio" }
     ];
 
-    let recordedSessions = JSON.parse(localStorage.getItem('bp3mi_attendance_cloud_v19') || '{}');
-    let studentPhones = JSON.parse(localStorage.getItem('bp3mi_student_phones_v19') || '{}');
-    let individualSignatures = JSON.parse(localStorage.getItem('bp3mi_indiv_sigs_v19') || '{}');
-    let subTopicsStore = JSON.parse(localStorage.getItem('bp3mi_subtopics_v19') || '{}');
-    let customSectorsStore = JSON.parse(localStorage.getItem('bp3mi_custom_sectors_v19') || '{}');
-    let completedDaysStore = JSON.parse(localStorage.getItem('bp3mi_completed_days_v19') || '{}');
-    let journalLockedStates = JSON.parse(localStorage.getItem('bp3mi_journal_locks_v19') || '{}');
-    let scoreRecapStore = JSON.parse(localStorage.getItem('bp3mi_score_recap_v19') || '{}');
-    let nclPracticalStore = JSON.parse(localStorage.getItem('bp3mi_ncl_practical_v19') || '{}');
-    let growthStore = JSON.parse(localStorage.getItem('bp3mi_growth_store_v19') || '{}');
-    let activeCurrentSector = localStorage.getItem('bp3mi_active_sector_v19') || "1.1 English Basic Pattern";
+    let recordedSessions = JSON.parse(localStorage.getItem('bp3mi_attendance_cloud_v20') || '{}');
+    let studentPhones = JSON.parse(localStorage.getItem('bp3mi_student_phones_v20') || '{}');
+    let individualSignatures = JSON.parse(localStorage.getItem('bp3mi_indiv_sigs_v20') || '{}');
+    let subTopicsStore = JSON.parse(localStorage.getItem('bp3mi_subtopics_v20') || '{}');
+    let customSectorsStore = JSON.parse(localStorage.getItem('bp3mi_custom_sectors_v20') || '{}');
+    let completedDaysStore = JSON.parse(localStorage.getItem('bp3mi_completed_days_v20') || '{}');
+    let journalLockedStates = JSON.parse(localStorage.getItem('bp3mi_journal_locks_v20') || '{}');
+    let scoreRecapStore = JSON.parse(localStorage.getItem('bp3mi_score_recap_v20') || '{}');
+    let nclPracticalStore = JSON.parse(localStorage.getItem('bp3mi_ncl_practical_v20') || '{}');
+    let growthStore = JSON.parse(localStorage.getItem('bp3mi_growth_store_v20') || '{}');
+    let activeCurrentSector = localStorage.getItem('bp3mi_active_sector_v20') || "1.1 English Basic Pattern";
     let isOperatorUnlocked = false;
 
     let computedSchedule = [];
@@ -1249,8 +1249,8 @@
             }
         });
 
-        localStorage.setItem('bp3mi_subtopics_v19', JSON.stringify(subTopicsStore));
-        localStorage.setItem('bp3mi_journal_locks_v19', JSON.stringify(journalLockedStates));
+        localStorage.setItem('bp3mi_subtopics_v20', JSON.stringify(subTopicsStore));
+        localStorage.setItem('bp3mi_journal_locks_v20', JSON.stringify(journalLockedStates));
         syncCompletedDaysFromMaster();
     }
 
@@ -1269,7 +1269,7 @@
         const liveSectorSelect = document.getElementById('liveSector');
         if(!liveSectorSelect) return;
         activeCurrentSector = liveSectorSelect.value;
-        localStorage.setItem('bp3mi_active_sector_v19', activeCurrentSector);
+        localStorage.setItem('bp3mi_active_sector_v20', activeCurrentSector);
         updateInstructorDisplay(activeCurrentSector);
     }
 
@@ -1292,7 +1292,7 @@
                 };
             }
         });
-        localStorage.setItem('bp3mi_completed_days_v19', JSON.stringify(completedDaysStore));
+        localStorage.setItem('bp3mi_completed_days_v20', JSON.stringify(completedDaysStore));
     }
 
     initDefaultData();
@@ -1613,7 +1613,7 @@
             }
         });
 
-        localStorage.setItem('bp3mi_growth_store_v19', JSON.stringify(growthStore));
+        localStorage.setItem('bp3mi_growth_store_v20', JSON.stringify(growthStore));
         alert(`🔒 Data Pre, Post, & Direct Test untuk modul "${currentSec}" telah tersimpan permanen!`);
     }
 
@@ -1745,7 +1745,7 @@
             notes: document.getElementById('nclNotesInput').value
         };
 
-        localStorage.setItem('bp3mi_ncl_practical_v19', JSON.stringify(nclPracticalStore));
+        localStorage.setItem('bp3mi_ncl_practical_v20', JSON.stringify(nclPracticalStore));
         alert(`🔒 Rubrik NCL untuk "${studentName}" pada modul "${sectorName}" telah tersimpan permanen!`);
     }
 
@@ -1891,13 +1891,13 @@
 
     function liveSyncSector(dayNum, val) {
         customSectorsStore[`day_${dayNum}`] = val;
-        localStorage.setItem('bp3mi_custom_sectors_v19', JSON.stringify(customSectorsStore));
+        localStorage.setItem('bp3mi_custom_sectors_v20', JSON.stringify(customSectorsStore));
         syncCompletedDaysFromMaster();
     }
 
     function liveSyncSubTopic(dayNum, val) {
         subTopicsStore[`day_${dayNum}`] = val;
-        localStorage.setItem('bp3mi_subtopics_v19', JSON.stringify(subTopicsStore));
+        localStorage.setItem('bp3mi_subtopics_v20', JSON.stringify(subTopicsStore));
         syncCompletedDaysFromMaster();
     }
 
@@ -1918,9 +1918,9 @@
         subTopicsStore[`day_${dayNum}`] = subVal;
         journalLockedStates[`day_${dayNum}`] = true;
 
-        localStorage.setItem('bp3mi_custom_sectors_v19', JSON.stringify(customSectorsStore));
-        localStorage.setItem('bp3mi_subtopics_v19', JSON.stringify(subTopicsStore));
-        localStorage.setItem('bp3mi_journal_locks_v19', JSON.stringify(journalLockedStates));
+        localStorage.setItem('bp3mi_custom_sectors_v20', JSON.stringify(customSectorsStore));
+        localStorage.setItem('bp3mi_subtopics_v20', JSON.stringify(subTopicsStore));
+        localStorage.setItem('bp3mi_journal_locks_v20', JSON.stringify(journalLockedStates));
         syncCompletedDaysFromMaster();
 
         alert(`Hari ke-${dayNum} berhasil disimpan dan dikunci permanen.`);
@@ -1945,9 +1945,9 @@
             }
         });
 
-        localStorage.setItem('bp3mi_custom_sectors_v19', JSON.stringify(customSectorsStore));
-        localStorage.setItem('bp3mi_subtopics_v19', JSON.stringify(subTopicsStore));
-        localStorage.setItem('bp3mi_journal_locks_v19', JSON.stringify(journalLockedStates));
+        localStorage.setItem('bp3mi_custom_sectors_v20', JSON.stringify(customSectorsStore));
+        localStorage.setItem('bp3mi_subtopics_v20', JSON.stringify(subTopicsStore));
+        localStorage.setItem('bp3mi_journal_locks_v20', JSON.stringify(journalLockedStates));
         syncCompletedDaysFromMaster();
 
         alert("Semua data master berhasil disimpan dan dikunci permanen!");
@@ -2024,7 +2024,7 @@
             return;
         }
         journalLockedStates[`day_${dayNum}`] = false;
-        localStorage.setItem('bp3mi_journal_locks_v19', JSON.stringify(journalLockedStates));
+        localStorage.setItem('bp3mi_journal_locks_v20', JSON.stringify(journalLockedStates));
         renderJournalTable();
         generateMasterKurikulumTable();
     }
@@ -2049,9 +2049,9 @@
         customSectorsStore[key] = secVal;
         journalLockedStates[key] = true;
 
-        localStorage.setItem('bp3mi_subtopics_v19', JSON.stringify(subTopicsStore));
-        localStorage.setItem('bp3mi_custom_sectors_v19', JSON.stringify(customSectorsStore));
-        localStorage.setItem('bp3mi_journal_locks_v19', JSON.stringify(journalLockedStates));
+        localStorage.setItem('bp3mi_subtopics_v20', JSON.stringify(subTopicsStore));
+        localStorage.setItem('bp3mi_custom_sectors_v20', JSON.stringify(customSectorsStore));
+        localStorage.setItem('bp3mi_journal_locks_v20', JSON.stringify(journalLockedStates));
         syncCompletedDaysFromMaster();
 
         alert(`Koreksi Jurnal KBM Hari ke-${dayNum} berhasil disimpan!`);
@@ -2105,7 +2105,7 @@
 
     function saveStudentPhone(idx, phoneVal) {
         studentPhones[idx] = phoneVal.trim();
-        localStorage.setItem('bp3mi_student_phones_v19', JSON.stringify(studentPhones));
+        localStorage.setItem('bp3mi_student_phones_v20', JSON.stringify(studentPhones));
         updateOperatorReviewStatus();
     }
 
@@ -2149,7 +2149,7 @@
         if(!canvas) return;
         const dataUrl = canvas.toDataURL();
         individualSignatures[idx] = dataUrl;
-        localStorage.setItem('bp3mi_indiv_sigs_v19', JSON.stringify(individualSignatures));
+        localStorage.setItem('bp3mi_indiv_sigs_v20', JSON.stringify(individualSignatures));
         updateOperatorReviewStatus();
         alert(`Tanda tangan peserta nomor ${idx + 1} (${students[idx]}) berhasil di-save dan diamankan permanen!`);
     }
@@ -2164,7 +2164,7 @@
         if(!canvas) return;
         canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
         delete individualSignatures[idx];
-        localStorage.setItem('bp3mi_indiv_sigs_v19', JSON.stringify(individualSignatures));
+        localStorage.setItem('bp3mi_indiv_sigs_v20', JSON.stringify(individualSignatures));
         updateOperatorReviewStatus();
         alert(`Tanda tangan peserta nomor ${idx + 1} dikosongkan.`);
     }
@@ -2256,7 +2256,7 @@
         if(!scoreRecapStore[sectorName]) scoreRecapStore[sectorName] = {};
         if(!scoreRecapStore[sectorName][idx]) scoreRecapStore[sectorName][idx] = { score: '', sig: '' };
         scoreRecapStore[sectorName][idx].sig = canvas.toDataURL();
-        localStorage.setItem('bp3mi_score_recap_v19', JSON.stringify(scoreRecapStore));
+        localStorage.setItem('bp3mi_score_recap_v20', JSON.stringify(scoreRecapStore));
         alert(`Tanda tangan ujian untuk peserta nomor ${idx + 1} berhasil disimpan!`);
     }
 
@@ -2270,7 +2270,7 @@
             canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
             if(scoreRecapStore[sectorName] && scoreRecapStore[sectorName][idx]) {
                 scoreRecapStore[sectorName][idx].sig = "";
-                localStorage.setItem('bp3mi_score_recap_v19', JSON.stringify(scoreRecapStore));
+                localStorage.setItem('bp3mi_score_recap_v20', JSON.stringify(scoreRecapStore));
             }
         }
     }
@@ -2289,7 +2289,7 @@
             }
         });
 
-        localStorage.setItem('bp3mi_score_recap_v19', JSON.stringify(scoreRecapStore));
+        localStorage.setItem('bp3mi_score_recap_v20', JSON.stringify(scoreRecapStore));
         alert(`🔒 Rekap nilai ujian untuk modul "${currentSec}" tersimpan permanen!`);
     }
 
@@ -2360,7 +2360,7 @@
         };
 
         recordedSessions[key] = sessionData;
-        localStorage.setItem('bp3mi_attendance_cloud_v19', JSON.stringify(recordedSessions));
+        localStorage.setItem('bp3mi_attendance_cloud_v20', JSON.stringify(recordedSessions));
         alert("Sesi presensi dan tanda tangan berhasil di-save secara menyeluruh ke arsip sistem!");
         renderMonthlyReport();
     }
