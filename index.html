@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistem Master Kurikulum 640 JPL & Sertifikat Motif Gelombang Lengkap</title>
     
-    <!-- Google Fonts for High-End Academic Certificate Typography -->
+    <!-- Google Fonts for High-End Academic Certificate & UI Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
 
     <!-- Open Graph / Social Media Thumbnail Integration -->
     <meta property="og:title" content="Sistem Master Kurikulum 640 JPL & Sertifikat Motif Gelombang Lengkap - BP3MI Aceh">
@@ -327,14 +327,14 @@
         .transcript-table th { background-color: #f1f5f9; color: var(--primary-color); text-align: center; font-size: 0.90rem; }
 
         /* ==========================================================================
-           REDESIGNED LUXURY ACADEMIC CERTIFICATE (PROPORTIONAL A4 LANDSCAPE FIT)
+           OFFICIAL ACADEMIC CERTIFICATE (HIGH-ELEGANCE & COMPACT SINGLE-LINE TITLE)
            ========================================================================== */
         .certificate-card {
             background: #fffdf9;
             border: 10px double #1e3a8a;
             outline: 2px solid #b8860b;
             outline-offset: -16px;
-            padding: 28px 45px;
+            padding: 24px 40px;
             margin: 15px auto;
             position: relative;
             box-sizing: border-box;
@@ -349,14 +349,14 @@
             box-shadow: 0 10px 25px -5px rgba(0,0,0,0.12);
         }
 
-        /* Subtle & Transparent Corner Accents */
+        /* Low Opacity Subtle Corner Accents */
         .cert-corner-rosette {
             position: absolute;
-            width: 45px;
-            height: 45px;
+            width: 42px;
+            height: 42px;
             z-index: 3;
             pointer-events: none;
-            opacity: 0.22; /* Soft, elegant transparency */
+            opacity: 0.16;
         }
         .cert-corner-tl { top: 18px; left: 18px; }
         .cert-corner-tr { top: 18px; right: 18px; transform: rotate(90deg); }
@@ -371,7 +371,7 @@
             height: 100%;
             pointer-events: none;
             z-index: 1;
-            opacity: 0.22;
+            opacity: 0.15;
         }
 
         .cert-content-wrapper {
@@ -383,31 +383,34 @@
             justify-content: space-between;
         }
 
+        /* 3-Column Header Grid Protecting Logos and Forcing Single Line Title */
         .cert-header-table { 
             width: 100%; 
             border: none; 
             margin-bottom: 4px;
             border-bottom: 1.5px solid rgba(184, 134, 11, 0.4);
-            padding-bottom: 8px;
+            padding-bottom: 6px;
         }
         .cert-header-table td { border: none; vertical-align: middle; }
         
         .cert-org-title { 
             font-family: 'Montserrat', sans-serif;
-            font-size: 0.88rem; 
+            font-size: 1.02rem; 
             font-weight: 700; 
             color: #1e3a8a; 
             text-transform: uppercase; 
-            letter-spacing: 0.8px; 
-            margin-bottom: 4px;
-            white-space: nowrap; /* Forces exact single line */
+            letter-spacing: -0.2px; 
+            margin-bottom: 3px;
+            white-space: nowrap; /* Ensures exact single line */
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         .cert-subtitle { 
             font-family: 'Montserrat', sans-serif;
-            font-size: 0.78rem; 
+            font-size: 0.76rem; 
             color: #475569; 
             font-weight: 500;
-            letter-spacing: 0.3px;
+            letter-spacing: 0.2px;
         }
         
         .cert-main-title {
@@ -424,86 +427,13 @@
             -webkit-text-stroke: 0.5px #785210;
         }
 
-        /* Ornamen Corner Rosettes & Guilloche Background */
-        .cert-corner-rosette {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            z-index: 3;
-            pointer-events: none;
-        }
-        .cert-corner-tl { top: 20px; left: 20px; }
-        .cert-corner-tr { top: 20px; right: 20px; transform: rotate(90deg); }
-        .cert-corner-bl { bottom: 20px; left: 20px; transform: rotate(-90deg); }
-        .cert-corner-br { bottom: 20px; right: 20px; transform: rotate(180deg); }
-
-        .guilloche-waves-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 1;
-            opacity: 0.28;
-        }
-
-        .cert-content-wrapper {
-            position: relative;
-            z-index: 2;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .cert-header-table { 
-            width: 100%; 
-            border: none; 
-            margin-bottom: 4px;
-            border-bottom: 2px solid #b8860b;
-            padding-bottom: 8px;
-        }
-        .cert-header-table td { border: none; vertical-align: middle; }
-        
-        .cert-org-title { 
-            font-family: 'Cinzel', serif;
-            font-size: 1.1rem; 
-            font-weight: 700; 
-            color: #1e3a8a; 
-            text-transform: uppercase; 
-            letter-spacing: 1.5px; 
-            margin-bottom: 3px; 
-        }
-        .cert-subtitle { 
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.8rem; 
-            color: #475569; 
-            font-weight: 500;
-            letter-spacing: 0.5px;
-        }
-        
-        .cert-main-title {
-            font-size: 2.3rem;
-            font-weight: 900;
-            font-family: 'Cinzel', serif;
-            letter-spacing: 5px;
-            margin: 6px 0 2px 0;
-            text-transform: uppercase;
-            background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            filter: drop-shadow(1px 2px 3px rgba(120, 82, 16, 0.35));
-            -webkit-text-stroke: 0.6px #785210;
-        }
-
         .cert-no-label {
             font-family: 'Montserrat', sans-serif;
-            font-size: 0.88rem;
+            font-size: 0.85rem;
             color: #475569;
             font-weight: 600;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
+            letter-spacing: 0.8px;
+            margin-bottom: 6px;
         }
 
         .cert-body-text { 
@@ -515,42 +445,42 @@
         }
 
         .cert-recipient-name {
-            font-size: 1.85rem;
+            font-size: 1.8rem;
             font-weight: 700;
             color: #1e3a8a;
             border-bottom: 2px solid #b8860b;
             display: inline-block;
-            padding: 0 24px 4px 24px;
-            margin: 4px auto 10px auto;
+            padding: 0 24px 3px 24px;
+            margin: 2px auto 8px auto;
             font-family: 'Playfair Display', serif;
-            letter-spacing: 1px;
+            letter-spacing: 0.8px;
         }
         
         .cert-desc {
             font-family: 'Montserrat', sans-serif;
-            font-size: 0.85rem;
-            line-height: 1.5;
+            font-size: 0.84rem;
+            line-height: 1.48;
             color: #1e293b;
             max-width: 920px;
-            margin: 0 auto 10px auto;
+            margin: 0 auto 8px auto;
             text-align: center;
         }
 
         .cert-badge-container {
-            margin: 6px 0 10px 0;
+            margin: 4px 0 8px 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
         }
 
-        /* Dual Signature Section Balanced Fit to Bottom */
+        /* Dual Signature Section Fit to Bottom */
         .cert-signatures-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 60px;
             margin-top: auto;
-            padding-top: 10px;
+            padding-top: 6px;
             text-align: center;
             font-family: 'Montserrat', sans-serif;
             font-size: 0.85rem;
@@ -620,7 +550,7 @@
                 border: 12px double #1e3a8a !important;
                 outline: 3px solid #b8860b !important;
                 outline-offset: -18px !important;
-                padding: 12mm 18mm !important;
+                padding: 10mm 16mm !important;
                 margin: 0 !important;
                 box-shadow: none !important;
                 background: #fffdf9 !important;
@@ -631,6 +561,10 @@
                 box-sizing: border-box !important;
                 page-break-inside: avoid !important;
                 page-break-after: always !important;
+            }
+
+            .cert-org-title {
+                font-size: 0.98rem !important;
             }
 
             .transcript-card {
@@ -1028,7 +962,7 @@
         </div>
     </div>
 
-    <!-- VIEW CETAK SERTIFIKAT RESMI (REDESIGNED PROPORTIONAL A4 LANDSCAPE) -->
+    <!-- VIEW CETAK SERTIFIKAT RESMI (3 LOGOS INTACT & SINGLE LINE HEADER TITLE) -->
     <div id="viewCertificate" class="view-section">
         <h3>📜 Cetak Sertifikat Kelulusan Resmi (Certificate of Completion)</h3>
         <p style="font-size: 0.88rem; color: #475569;">Sertifikat kelulusan resmi dengan tata letak klasik akademis yang proporsional dan muat sempurna pada kertas A4 Landscape.</p>
@@ -1045,7 +979,7 @@
         </div>
 
         <div id="certificatePrintArea" class="certificate-card">
-            <!-- SVG CORNER ACCENTS - SOFT & ELEGANT -->
+            <!-- SVG CORNER ACCENTS - SUBTLE & TRANSPARENT GOLD (OPACITY 0.16) -->
             <svg class="cert-corner-rosette cert-corner-tl" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10,10 L90,10 L90,15 L15,15 L15,90 L10,90 Z" fill="#b8860b"/>
                 <path d="M22,22 L78,22 L78,25 L25,25 L25,78 L22,78 Z" fill="#1e3a8a"/>
@@ -1067,7 +1001,7 @@
                 <circle cx="15" cy="15" r="4" fill="#b8860b"/>
             </svg>
 
-            <!-- GUILLOCHE BACKGROUND WAVES -->
+            <!-- GUILLOCHE BACKGROUND WAVES (OPACITY 0.15) -->
             <svg class="guilloche-waves-bg" viewBox="0 0 1000 700" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <linearGradient id="waveGoldNavy" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -1090,18 +1024,18 @@
             </svg>
 
             <div class="cert-content-wrapper">
-                <!-- LOGO INSTITUSI & KOP HEADER -->
+                <!-- LOGO INSTITUSI & KOP HEADER (3 LOGOS INTACT & SINGLE LINE TITLE) -->
                 <table class="cert-header-table">
                     <tr>
                         <td style="width: 85px; text-align: left;">
-                            <img src="Garuda1.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/Garuda1.png';" alt="Garuda Pancasila" style="width: 65px; height: 65px; object-fit: contain;" crossorigin="anonymous" />
+                            <img src="Garuda1.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/Garuda1.png';" alt="Garuda Pancasila" style="width: 75px; height: 75px; object-fit: contain;" crossorigin="anonymous" />
                         </td>
-                        <td style="text-align: center;">
+                        <td style="text-align: center; padding: 0 10px;">
                             <div class="cert-org-title">AKADEMI KEPERAWATAN (AKPER) TEUNGKU FAKINAH BANDA ACEH &amp; BP3MI ACEH</div>
                             <div class="cert-subtitle">Program Peningkatan Kapasitas &amp; Kompetensi Calon Pekerja Migran Sektor Kesehatan (640 JPL)</div>
                         </td>
-                        <td style="width: 135px; text-align: right;">
-                            <div style="display: flex; gap: 8px; justify-content: flex-end; align-items: center;">
+                        <td style="width: 110px; text-align: right;">
+                            <div style="display: flex; gap: 6px; justify-content: flex-end; align-items: center;">
                                 <img src="BP3MI.jpg" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/BP3MI.jpg';" alt="Logo BP3MI Aceh" style="width: 40px; height: 40px; object-fit: contain; border-radius: 4px;" crossorigin="anonymous" />
                                 <img src="Fakinah.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/Fakinah.png';" alt="Logo AKPER Fakinah" style="width: 40px; height: 40px; object-fit: contain; border-radius: 4px;" crossorigin="anonymous" />
                             </div>
