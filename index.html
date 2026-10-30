@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistem Master Kurikulum 640 JPL & Sertifikat Motif Gelombang Lengkap</title>
+    <title>Sistem Master Kurikulum 640 JPL & Sertifikat Motif Gelombang Lengkap - BP3MI Aceh & AKPER Fakinah</title>
     
     <!-- Google Fonts for High-End Academic Certificate & UI Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
 
     <!-- Open Graph / Social Media Thumbnail Integration -->
     <meta property="og:title" content="Sistem Master Kurikulum 640 JPL & Sertifikat Motif Gelombang Lengkap - BP3MI Aceh">
@@ -43,6 +43,7 @@
             width: 100vw;
             min-height: 100vh;
             box-sizing: border-box;
+            overflow-x: hidden;
         }
 
         .container {
@@ -51,32 +52,37 @@
             margin: 0 auto;
             background: var(--card-bg);
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
             box-sizing: border-box;
         }
 
         .locked-header {
-            background: linear-gradient(135deg, var(--primary-color), #1d4ed8);
+            background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 50%, #0d9488 100%);
             color: white;
-            padding: 20px;
-            border-radius: 8px;
+            padding: 22px 26px;
+            border-radius: 10px;
             margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(30, 58, 138, 0.25);
         }
 
         .locked-header h2 {
-            margin: 0 0 8px 0;
-            font-size: 1.2rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            margin: 0 0 10px 0;
+            font-size: 1.3rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.25);
             padding-bottom: 8px;
             color: white !important;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 0.5px;
+            font-weight: 700;
         }
 
         .header-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 15px;
-            font-size: 0.9rem;
+            font-size: 0.92rem;
+            font-family: 'Montserrat', sans-serif;
         }
 
         .mode-nav {
@@ -90,18 +96,30 @@
 
         .nav-btn {
             background: #e2e8f0;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 6px;
-            font-weight: bold;
+            border: 1px solid #cbd5e1;
+            padding: 9px 16px;
+            border-radius: 8px;
+            font-weight: 700;
             cursor: pointer;
             color: var(--text-color);
             font-size: 0.85rem;
+            transition: all 0.2s ease;
+            font-family: 'Montserrat', sans-serif;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .nav-btn:hover {
+            background: #cbd5e1;
+            transform: translateY(-1px);
         }
 
         .nav-btn.active {
             background: var(--primary-color);
             color: white;
+            border-color: var(--primary-color);
+            box-shadow: 0 4px 10px rgba(30, 58, 138, 0.3);
         }
 
         .view-section {
@@ -116,11 +134,11 @@
         .session-control-box {
             background: #f8fafc;
             border: 1px solid var(--border-color);
-            padding: 15px;
+            padding: 16px;
             border-radius: 8px;
             margin-bottom: 20px;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
             gap: 15px;
             align-items: center;
         }
@@ -131,13 +149,14 @@
             font-weight: bold;
             color: var(--primary-color);
             margin-bottom: 5px;
+            font-family: 'Montserrat', sans-serif;
         }
 
         .control-group input, .control-group select {
             width: 100%;
-            padding: 8px;
+            padding: 8px 12px;
             border: 1px solid var(--border-color);
-            border-radius: 4px;
+            border-radius: 6px;
             font-size: 0.88rem;
             box-sizing: border-box;
         }
@@ -145,7 +164,7 @@
         .filter-report-box {
             background: #f0fdf4;
             border: 1px solid #10b981;
-            padding: 15px;
+            padding: 16px;
             border-radius: 8px;
             margin-bottom: 20px;
             display: flex;
@@ -157,7 +176,7 @@
         .schedule-timeline-box {
             background: #fdf8f6;
             border: 1px solid #f97316;
-            padding: 15px;
+            padding: 16px;
             border-radius: 8px;
             margin-bottom: 20px;
         }
@@ -167,14 +186,15 @@
             color: #c2410c;
             font-size: 0.95rem;
             border-bottom: 1px dashed #fed7aa;
-            padding-bottom: 5px;
+            padding-bottom: 6px;
+            font-family: 'Montserrat', sans-serif;
         }
 
         .operator-lock-banner {
             background: #fffbeb;
             border: 1px solid #f59e0b;
-            padding: 15px;
-            border-radius: 6px;
+            padding: 14px 18px;
+            border-radius: 8px;
             margin-bottom: 15px;
             display: flex;
             justify-content: space-between;
@@ -186,18 +206,23 @@
             background: #d97706;
             color: white;
             border: none;
-            padding: 8px 16px;
-            border-radius: 4px;
+            padding: 8px 18px;
+            border-radius: 6px;
             font-weight: bold;
             cursor: pointer;
             font-size: 0.85rem;
             white-space: nowrap;
+            transition: background 0.2s;
+        }
+
+        .btn-unlock:hover {
+            background: #b45309;
         }
 
         .operator-review-panel {
             background: #eff6ff;
             border: 1px solid #3b82f6;
-            padding: 15px;
+            padding: 16px;
             border-radius: 8px;
             margin-bottom: 20px;
             display: none;
@@ -210,7 +235,7 @@
             max-height: 320px;
             overflow-y: auto;
             background: white;
-            padding: 10px;
+            padding: 12px;
             border: 1px solid #bfdbfe;
             border-radius: 6px;
             font-size: 0.8rem;
@@ -222,7 +247,9 @@
             margin-bottom: 12px;
             border-bottom: 2px solid var(--border-color);
             padding-bottom: 6px;
-            font-size: 1.05rem;
+            font-size: 1.1rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
         }
 
         .presence-table {
@@ -243,14 +270,16 @@
             background-color: #f1f5f9;
             color: var(--primary-color);
             text-align: center;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
         }
 
         .student-number { text-align: center; font-weight: bold; width: 35px; }
         .student-name { font-weight: 600; width: 160px; }
-        .phone-input { width: 130px; padding: 5px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 0.8rem; }
-        .score-input { width: 65px; padding: 5px; text-align: center; font-weight: bold; border: 1px solid #10b981; border-radius: 4px; background: #f0fdf4; color: #065f46; }
+        .phone-input { width: 130px; padding: 6px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 0.8rem; }
+        .score-input { width: 65px; padding: 6px; text-align: center; font-weight: bold; border: 1px solid #10b981; border-radius: 4px; background: #f0fdf4; color: #065f46; }
         .checkbox-center { text-align: center; width: 60px; }
-        .attendance-checkbox { width: 16px; height: 16px; accent-color: var(--secondary-color); cursor: pointer; }
+        .attendance-checkbox { width: 18px; height: 18px; accent-color: var(--secondary-color); cursor: pointer; }
         .sig-cell { text-align: center; width: 180px; }
 
         .individual-canvas {
@@ -266,33 +295,37 @@
         }
 
         .btn-action-group { display: flex; gap: 4px; justify-content: center; margin-top: 4px; }
-        .btn-sig-save { background: #059669; color: white; border: none; padding: 3px 8px; border-radius: 3px; cursor: pointer; font-size: 0.90rem; font-weight: bold; }
-        .btn-sig-edit { background: #d97706; color: white; border: none; padding: 3px 8px; border-radius: 3px; cursor: pointer; font-size: 0.90rem; font-weight: bold; }
-        .btn-sig-clear { background: #ef4444; color: white; border: none; padding: 3px 8px; border-radius: 3px; cursor: pointer; font-size: 0.90rem; font-weight: bold; }
+        .btn-sig-save { background: #059669; color: white; border: none; padding: 4px 9px; border-radius: 4px; cursor: pointer; font-size: 0.78rem; font-weight: bold; }
+        .btn-sig-edit { background: #d97706; color: white; border: none; padding: 4px 9px; border-radius: 4px; cursor: pointer; font-size: 0.78rem; font-weight: bold; }
+        .btn-sig-clear { background: #ef4444; color: white; border: none; padding: 4px 9px; border-radius: 4px; cursor: pointer; font-size: 0.78rem; font-weight: bold; }
 
         .actions {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-top: 20px;
-            padding-top: 12px;
+            padding-top: 14px;
             border-top: 1px solid var(--border-color);
             flex-wrap: wrap;
             gap: 10px;
         }
 
-        .btn-export { background-color: var(--secondary-color); color: white; border: none; padding: 9px 18px; border-radius: 6px; font-size: 0.9rem; cursor: pointer; font-weight: bold; }
-        .btn-doc { background-color: #2563eb; color: white; border: none; padding: 9px 18px; border-radius: 6px; font-size: 0.9rem; cursor: pointer; font-weight: bold; }
-        .btn-save-sub { background-color: #059669; color: white; border: none; padding: 6px 14px; border-radius: 4px; font-size: 0.8rem; cursor: pointer; font-weight: bold; margin-top: 6px; }
-        .btn-edit-journal { background-color: #d97706; color: white; border: none; padding: 5px 10px; border-radius: 3px; font-size: 0.75rem; cursor: pointer; font-weight: bold; margin-right: 4px; }
-        .btn-save-journal { background-color: #059669; color: white; border: none; padding: 5px 10px; border-radius: 3px; font-size: 0.75rem; cursor: pointer; font-weight: bold; }
+        .btn-export { background-color: var(--secondary-color); color: white; border: none; padding: 9px 18px; border-radius: 6px; font-size: 0.88rem; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; transition: background 0.2s; }
+        .btn-export:hover { background-color: #0f766e; }
+        
+        .btn-doc { background-color: #2563eb; color: white; border: none; padding: 9px 18px; border-radius: 6px; font-size: 0.88rem; cursor: pointer; font-weight: bold; font-family: 'Montserrat', sans-serif; transition: background 0.2s; }
+        .btn-doc:hover { background-color: #1d4ed8; }
+
+        .btn-save-sub { background-color: #059669; color: white; border: none; padding: 6px 14px; border-radius: 4px; font-size: 0.8rem; cursor: pointer; font-weight: bold; margin-top: 2px; }
+        .btn-edit-journal { background-color: #d97706; color: white; border: none; padding: 5px 10px; border-radius: 4px; font-size: 0.75rem; cursor: pointer; font-weight: bold; margin-right: 4px; }
+        .btn-save-journal { background-color: #059669; color: white; border: none; padding: 5px 10px; border-radius: 4px; font-size: 0.75rem; cursor: pointer; font-weight: bold; }
 
         .alert-box {
             background: #fffbeb;
             border: 1px solid #fcd34d;
             color: #92400e;
-            padding: 10px 15px;
-            border-radius: 6px;
+            padding: 12px 16px;
+            border-radius: 8px;
             font-size: 0.85rem;
             margin-bottom: 15px;
             display: flex;
@@ -300,15 +333,15 @@
             align-items: center;
         }
 
-        .rubric-table th, .rubric-table td { font-size: 0.90rem; padding: 6px; }
+        .rubric-table th, .rubric-table td { font-size: 0.82rem; padding: 6px; }
         .rubric-table th { background-color: #e2e8f0; }
 
-        .badge-distinction { background: #dcfce7; color: #15803d; font-weight: bold; padding: 2px 6px; border-radius: 4px; font-size: 0.7rem; }
-        .badge-merit { background: #dbeafe; color: #1e40af; font-weight: bold; padding: 2px 6px; border-radius: 4px; font-size: 0.7rem; }
-        .badge-pass { background: #fef9c3; color: #a16207; font-weight: bold; padding: 2px 6px; border-radius: 4px; font-size: 0.7rem; }
-        .badge-need { background: #fee2e2; color: #b91c1c; font-weight: bold; padding: 2px 6px; border-radius: 4px; font-size: 0.7rem; }
+        .badge-distinction { background: #dcfce7; color: #15803d; font-weight: bold; padding: 3px 8px; border-radius: 4px; font-size: 0.72rem; border: 1px solid #86efac; }
+        .badge-merit { background: #dbeafe; color: #1e40af; font-weight: bold; padding: 3px 8px; border-radius: 4px; font-size: 0.72rem; border: 1px solid #93c5fd; }
+        .badge-pass { background: #fef9c3; color: #a16207; font-weight: bold; padding: 3px 8px; border-radius: 4px; font-size: 0.72rem; border: 1px solid #fde047; }
+        .badge-need { background: #fee2e2; color: #b91c1c; font-weight: bold; padding: 3px 8px; border-radius: 4px; font-size: 0.72rem; border: 1px solid #fca5a5; }
 
-        /* Styling Transkrip Nilai 1 Halaman */
+        /* Transkrip Nilai 1 Halaman */
         .transcript-card {
             background: #ffffff;
             border: 2px solid var(--primary-color);
@@ -319,22 +352,22 @@
             width: 100%;
         }
         .transcript-header-title { text-align: center; border-bottom: 2px double var(--primary-color); padding-bottom: 8px; margin-bottom: 12px; }
-        .transcript-header-title h2 { margin: 0; color: var(--primary-color); font-size: 1.15rem; text-transform: uppercase; letter-spacing: 0.5px; }
-        .transcript-header-title p { margin: 3px 0 0 0; font-size: 0.78rem; color: #475569; }
+        .transcript-header-title h2 { margin: 0; color: var(--primary-color); font-size: 1.15rem; text-transform: uppercase; letter-spacing: 0.5px; font-family: 'Montserrat', sans-serif; }
+        .transcript-header-title p { margin: 4px 0 0 0; font-size: 0.78rem; color: #475569; font-weight: 600; }
 
-        .transcript-table { width: 100%; border-collapse: collapse; font-size: 0.90rem; background: white; }
-        .transcript-table th, .transcript-table td { border: 1px solid #cbd5e1; padding: 4px 6px; vertical-align: middle; }
-        .transcript-table th { background-color: #f1f5f9; color: var(--primary-color); text-align: center; font-size: 0.90rem; }
+        .transcript-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white; }
+        .transcript-table th, .transcript-table td { border: 1px solid #cbd5e1; padding: 5px 6px; vertical-align: middle; }
+        .transcript-table th { background-color: #f1f5f9; color: var(--primary-color); text-align: center; font-size: 0.82rem; font-family: 'Montserrat', sans-serif; }
 
         /* ==========================================================================
-           OFFICIAL ACADEMIC CERTIFICATE (HIGH-ELEGANCE & COMPACT SINGLE-LINE TITLE)
+           OFFICIAL ACADEMIC CERTIFICATE (HIGH-ELEGANCE & COMPACT A4 LANDSCAPE)
            ========================================================================== */
         .certificate-card {
             background: #fffdf9;
-            border: 10px double #1e3a8a;
-            outline: 2px solid #b8860b;
-            outline-offset: -16px;
-            padding: 24px 40px;
+            border: 12px double #1e3a8a;
+            outline: 3px solid #b8860b;
+            outline-offset: -18px;
+            padding: 24px 36px;
             margin: 15px auto;
             position: relative;
             box-sizing: border-box;
@@ -346,22 +379,21 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.12);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
         }
 
-        /* Low Opacity Subtle Corner Accents */
         .cert-corner-rosette {
             position: absolute;
-            width: 42px;
-            height: 42px;
+            width: 48px;
+            height: 48px;
             z-index: 3;
             pointer-events: none;
-            opacity: 0.16;
+            opacity: 0.25;
         }
-        .cert-corner-tl { top: 18px; left: 18px; }
-        .cert-corner-tr { top: 18px; right: 18px; transform: rotate(90deg); }
-        .cert-corner-bl { bottom: 18px; left: 18px; transform: rotate(-90deg); }
-        .cert-corner-br { bottom: 18px; right: 18px; transform: rotate(180deg); }
+        .cert-corner-tl { top: 22px; left: 22px; }
+        .cert-corner-tr { top: 22px; right: 22px; transform: rotate(90deg); }
+        .cert-corner-bl { bottom: 22px; left: 22px; transform: rotate(-90deg); }
+        .cert-corner-br { bottom: 22px; right: 22px; transform: rotate(180deg); }
 
         .guilloche-waves-bg {
             position: absolute;
@@ -371,7 +403,7 @@
             height: 100%;
             pointer-events: none;
             z-index: 1;
-            opacity: 0.15;
+            opacity: 0.18;
         }
 
         .cert-content-wrapper {
@@ -383,25 +415,24 @@
             justify-content: space-between;
         }
 
-        /* 3-Column Header Grid Protecting Logos and Forcing Single Line Title */
         .cert-header-table { 
             width: 100%; 
             border: none; 
             margin-bottom: 4px;
             border-bottom: 1.5px solid rgba(184, 134, 11, 0.4);
-            padding-bottom: 6px;
+            padding-bottom: 8px;
         }
         .cert-header-table td { border: none; vertical-align: middle; }
         
         .cert-org-title { 
             font-family: 'Montserrat', sans-serif;
-            font-size: 1.02rem; 
-            font-weight: 700; 
+            font-size: 1.05rem; 
+            font-weight: 800; 
             color: #1e3a8a; 
             text-transform: uppercase; 
-            letter-spacing: -0.2px; 
+            letter-spacing: -0.1px; 
             margin-bottom: 3px;
-            white-space: nowrap; /* Ensures exact single line */
+            white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
@@ -409,7 +440,7 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 0.76rem; 
             color: #475569; 
-            font-weight: 500;
+            font-weight: 600;
             letter-spacing: 0.2px;
         }
         
@@ -417,7 +448,7 @@
             font-size: 2.2rem;
             font-weight: 900;
             font-family: 'Cinzel', serif;
-            letter-spacing: 5px;
+            letter-spacing: 6px;
             margin: 4px 0 2px 0;
             text-transform: uppercase;
             background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
@@ -436,22 +467,28 @@
             margin-bottom: 6px;
         }
 
+        /* Penyesuaian blok penerima sertifikat ke bawah (turun 5 ketukan / ~32px) */
+        .cert-recipient-block {
+            margin-top: 32px;
+        }
+
         .cert-body-text { 
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.15rem; 
+            font-size: 1.25rem; 
             color: #334155; 
             font-style: italic;
-            margin-bottom: 2px; 
+            font-weight: 600;
+            margin-bottom: 4px; 
         }
 
         .cert-recipient-name {
-            font-size: 1.8rem;
+            font-size: 1.85rem;
             font-weight: 700;
             color: #1e3a8a;
             border-bottom: 2px solid #b8860b;
             display: inline-block;
-            padding: 0 24px 3px 24px;
-            margin: 2px auto 8px auto;
+            padding: 0 24px 4px 24px;
+            margin: 4px auto 12px auto;
             font-family: 'Playfair Display', serif;
             letter-spacing: 0.8px;
         }
@@ -459,15 +496,15 @@
         .cert-desc {
             font-family: 'Montserrat', sans-serif;
             font-size: 0.84rem;
-            line-height: 1.48;
+            line-height: 1.5;
             color: #1e293b;
             max-width: 920px;
-            margin: 0 auto 8px auto;
+            margin: 0 auto 10px auto;
             text-align: center;
         }
 
         .cert-badge-container {
-            margin: 4px 0 8px 0;
+            margin: 6px 0 12px 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -491,7 +528,7 @@
         .cert-sig-box { padding: 0; }
         .cert-sig-space { height: 42px; } 
         .cert-sig-name { font-weight: 700; color: #1e3a8a; text-decoration: underline; margin-top: 2px; font-size: 0.92rem; }
-        .cert-sig-role { font-size: 0.75rem; color: #475569; margin-top: 2px; font-weight: 500; }
+        .cert-sig-role { font-size: 0.75rem; color: #475569; margin-top: 2px; font-weight: 600; }
 
         /* ==========================================================================
            PRECISE PRINT CSS SETUP FOR EXACT A4 LANDSCAPE PRINT (ZERO BLEED / FIT)
@@ -962,7 +999,7 @@
         </div>
     </div>
 
-    <!-- VIEW CETAK SERTIFIKAT RESMI (3 LOGOS INTACT & SINGLE LINE HEADER TITLE) -->
+    <!-- VIEW CETAK SERTIFIKAT RESMI (3 LOGOS INTACT, SINGLE LINE HEADER & RECIPIENT SPACING ADJUSTED) -->
     <div id="viewCertificate" class="view-section">
         <h3>📜 Cetak Sertifikat Kelulusan Resmi (Certificate of Completion)</h3>
         <p style="font-size: 0.88rem; color: #475569;">Sertifikat kelulusan resmi dengan tata letak klasik akademis yang proporsional dan muat sempurna pada kertas A4 Landscape.</p>
@@ -979,7 +1016,7 @@
         </div>
 
         <div id="certificatePrintArea" class="certificate-card">
-            <!-- SVG CORNER ACCENTS - SUBTLE & TRANSPARENT GOLD (OPACITY 0.16) -->
+            <!-- SVG CORNER ACCENTS - SUBTLE & TRANSPARENT GOLD (OPACITY 0.25) -->
             <svg class="cert-corner-rosette cert-corner-tl" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10,10 L90,10 L90,15 L15,15 L15,90 L10,90 Z" fill="#b8860b"/>
                 <path d="M22,22 L78,22 L78,25 L25,25 L25,78 L22,78 Z" fill="#1e3a8a"/>
@@ -1001,7 +1038,7 @@
                 <circle cx="15" cy="15" r="4" fill="#b8860b"/>
             </svg>
 
-            <!-- GUILLOCHE BACKGROUND WAVES (OPACITY 0.15) -->
+            <!-- GUILLOCHE BACKGROUND WAVES (OPACITY 0.18) -->
             <svg class="guilloche-waves-bg" viewBox="0 0 1000 700" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <linearGradient id="waveGoldNavy" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -1048,16 +1085,19 @@
                     <div class="cert-no-label">Certificate of Completion — No: <span id="certNo">FAK/CERT/2026/XI/001</span></div>
                 </div>
 
-                <div>
-                    <div class="cert-body-text">Diberikan Dengan Bangga Kepada:</div>
-                    <div class="cert-recipient-name" id="certStudentNameDisplay">-</div>
-                </div>
+                <!-- BLOK PENERIMA DENGAN MARGIN ATAS LIMA KETUKAN (MENGISI SPACE TENGAH) -->
+                <div class="cert-recipient-block">
+                    <div>
+                        <div class="cert-body-text">Diberikan Dengan Bangga Kepada:</div>
+                        <div class="cert-recipient-name" id="certStudentNameDisplay">-</div>
+                    </div>
 
-                <div class="cert-desc">
-                    Telah berhasil menyelesaikan seluruh rangkaian kurikulum intensif <strong>"Upgrading Skill" Peningkatan Kapasitas Calon Pekerja Migran Kesehatan 640 JPL</strong> serta Ujian Kompetensi (<strong>English for Specific Purposes: Prometric/SCFHS Simulation</strong> dengan <em>Safety First, Tie-Breaker, Linguistic Distractor</em> dan <em>NPSG</em>), <strong>Clinical Assessment</strong> (<em>Cases and "How to"</em>), &amp; <strong>Behavioral Technic Interview Simulation</strong> dengan pencapaian rata-rata nilai akhir sebesar <strong id="certScoreDisplay" style="color:#1e3a8a;">0.0 / 100</strong> serta predikat kelulusan:
-                </div>
+                    <div class="cert-desc">
+                        Telah berhasil menyelesaikan seluruh rangkaian kurikulum intensif <strong>"Upgrading Skill" Peningkatan Kapasitas Calon Pekerja Migran Kesehatan 640 JPL</strong> serta Ujian Kompetensi (<strong>English for Specific Purposes: Prometric/SCFHS Simulation</strong> dengan <em>Safety First, Tie-Breaker, Linguistic Distractor</em> dan <em>NPSG</em>), <strong>Clinical Assessment</strong> (<em>Cases and "How to"</em>), &amp; <strong>Behavioral Technic Interview Simulation</strong> dengan pencapaian rata-rata nilai akhir sebesar <strong id="certScoreDisplay" style="color:#1e3a8a;">0.0 / 100</strong> serta predikat kelulusan:
+                    </div>
 
-                <div class="cert-badge-container" id="certPredicateDisplay">-</div>
+                    <div class="cert-badge-container" id="certPredicateDisplay">-</div>
+                </div>
 
                 <!-- SEKSI TANDA TANGAN DUAL GRID FIT TO BOTTOM -->
                 <div class="cert-signatures-grid">
