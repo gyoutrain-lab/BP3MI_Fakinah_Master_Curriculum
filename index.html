@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistem Master Kurikulum 640 JPL & Sertifikat Motif Gelombang Guilloche Lengkap</title>
+    <title>Sistem Master Kurikulum 640 JPL & Sertifikat Motif Gelombang Lengkap</title>
     
-    <!-- Open Graph / Social Media Thumbnail Integration (FB, IG, WhatsApp, LinkedIn) -->
+    <!-- Open Graph / Social Media Thumbnail Integration -->
     <meta property="og:title" content="Sistem Master Kurikulum 640 JPL & Sertifikat Motif Gelombang Lengkap - BP3MI Aceh">
     <meta property="og:description" content="Aplikasi terintegrasi Presensi, Rekap Nilai, Penilaian Praktik NCL, Transkrip Akademik 1 Halaman, dan Sertifikat Kelulusan Resmi dengan Motif Gelombang Guilloche Proporsional.">
     <meta property="og:image" content="https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/ClassCert.jpg">
@@ -238,52 +238,13 @@
             text-align: center;
         }
 
-        .student-number {
-            text-align: center;
-            font-weight: bold;
-            width: 35px;
-        }
-
-        .student-name {
-            font-weight: 600;
-            width: 160px;
-        }
-
-        .phone-input {
-            width: 130px;
-            padding: 5px;
-            border: 1px solid #cbd5e1;
-            border-radius: 4px;
-            font-size: 0.8rem;
-        }
-
-        .score-input {
-            width: 65px;
-            padding: 5px;
-            text-align: center;
-            font-weight: bold;
-            border: 1px solid #10b981;
-            border-radius: 4px;
-            background: #f0fdf4;
-            color: #065f46;
-        }
-
-        .checkbox-center {
-            text-align: center;
-            width: 60px;
-        }
-
-        .attendance-checkbox {
-            width: 16px;
-            height: 16px;
-            accent-color: var(--secondary-color);
-            cursor: pointer;
-        }
-
-        .sig-cell {
-            text-align: center;
-            width: 180px;
-        }
+        .student-number { text-align: center; font-weight: bold; width: 35px; }
+        .student-name { font-weight: 600; width: 160px; }
+        .phone-input { width: 130px; padding: 5px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 0.8rem; }
+        .score-input { width: 65px; padding: 5px; text-align: center; font-weight: bold; border: 1px solid #10b981; border-radius: 4px; background: #f0fdf4; color: #065f46; }
+        .checkbox-center { text-align: center; width: 60px; }
+        .attendance-checkbox { width: 16px; height: 16px; accent-color: var(--secondary-color); cursor: pointer; }
+        .sig-cell { text-align: center; width: 180px; }
 
         .individual-canvas {
             border: 1px dashed #94a3b8;
@@ -297,45 +258,10 @@
             touch-action: none;
         }
 
-        .btn-action-group {
-            display: flex;
-            gap: 4px;
-            justify-content: center;
-            margin-top: 4px;
-        }
-
-        .btn-sig-save {
-            background: #059669;
-            color: white;
-            border: none;
-            padding: 3px 8px;
-            border-radius: 3px;
-            cursor: pointer;
-            font-size: 0.72rem;
-            font-weight: bold;
-        }
-
-        .btn-sig-edit {
-            background: #d97706;
-            color: white;
-            border: none;
-            padding: 3px 8px;
-            border-radius: 3px;
-            cursor: pointer;
-            font-size: 0.72rem;
-            font-weight: bold;
-        }
-
-        .btn-sig-clear {
-            background: #ef4444;
-            color: white;
-            border: none;
-            padding: 3px 8px;
-            border-radius: 3px;
-            cursor: pointer;
-            font-size: 0.72rem;
-            font-weight: bold;
-        }
+        .btn-action-group { display: flex; gap: 4px; justify-content: center; margin-top: 4px; }
+        .btn-sig-save { background: #059669; color: white; border: none; padding: 3px 8px; border-radius: 3px; cursor: pointer; font-size: 0.72rem; font-weight: bold; }
+        .btn-sig-edit { background: #d97706; color: white; border: none; padding: 3px 8px; border-radius: 3px; cursor: pointer; font-size: 0.72rem; font-weight: bold; }
+        .btn-sig-clear { background: #ef4444; color: white; border: none; padding: 3px 8px; border-radius: 3px; cursor: pointer; font-size: 0.72rem; font-weight: bold; }
 
         .actions {
             display: flex;
@@ -348,62 +274,11 @@
             gap: 10px;
         }
 
-        .btn-export {
-            background-color: var(--secondary-color);
-            color: white;
-            border: none;
-            padding: 9px 18px;
-            border-radius: 6px;
-            font-size: 0.9rem;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .btn-doc {
-            background-color: #2563eb;
-            color: white;
-            border: none;
-            padding: 9px 18px;
-            border-radius: 6px;
-            font-size: 0.9rem;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .btn-save-sub {
-            background-color: #059669;
-            color: white;
-            border: none;
-            padding: 6px 14px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            cursor: pointer;
-            font-weight: bold;
-            margin-top: 6px;
-        }
-
-        .btn-edit-journal {
-            background-color: #d97706;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 3px;
-            font-size: 0.75rem;
-            cursor: pointer;
-            font-weight: bold;
-            margin-right: 4px;
-        }
-
-        .btn-save-journal {
-            background-color: #059669;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 3px;
-            font-size: 0.75rem;
-            cursor: pointer;
-            font-weight: bold;
-        }
+        .btn-export { background-color: var(--secondary-color); color: white; border: none; padding: 9px 18px; border-radius: 6px; font-size: 0.9rem; cursor: pointer; font-weight: bold; }
+        .btn-doc { background-color: #2563eb; color: white; border: none; padding: 9px 18px; border-radius: 6px; font-size: 0.9rem; cursor: pointer; font-weight: bold; }
+        .btn-save-sub { background-color: #059669; color: white; border: none; padding: 6px 14px; border-radius: 4px; font-size: 0.8rem; cursor: pointer; font-weight: bold; margin-top: 6px; }
+        .btn-edit-journal { background-color: #d97706; color: white; border: none; padding: 5px 10px; border-radius: 3px; font-size: 0.75rem; cursor: pointer; font-weight: bold; margin-right: 4px; }
+        .btn-save-journal { background-color: #059669; color: white; border: none; padding: 5px 10px; border-radius: 3px; font-size: 0.75rem; cursor: pointer; font-weight: bold; }
 
         .alert-box {
             background: #fffbeb;
@@ -418,13 +293,8 @@
             align-items: center;
         }
 
-        .rubric-table th, .rubric-table td {
-            font-size: 0.78rem;
-            padding: 6px;
-        }
-        .rubric-table th {
-            background-color: #e2e8f0;
-        }
+        .rubric-table th, .rubric-table td { font-size: 0.78rem; padding: 6px; }
+        .rubric-table th { background-color: #e2e8f0; }
 
         .badge-distinction { background: #dcfce7; color: #15803d; font-weight: bold; padding: 2px 6px; border-radius: 4px; font-size: 0.7rem; }
         .badge-merit { background: #dbeafe; color: #1e40af; font-weight: bold; padding: 2px 6px; border-radius: 4px; font-size: 0.7rem; }
@@ -441,46 +311,28 @@
             box-sizing: border-box;
             width: 100%;
         }
-        .transcript-header-title {
-            text-align: center;
-            border-bottom: 2px double var(--primary-color);
-            padding-bottom: 8px;
-            margin-bottom: 12px;
-        }
+        .transcript-header-title { text-align: center; border-bottom: 2px double var(--primary-color); padding-bottom: 8px; margin-bottom: 12px; }
         .transcript-header-title h2 { margin: 0; color: var(--primary-color); font-size: 1.15rem; text-transform: uppercase; letter-spacing: 0.5px; }
         .transcript-header-title p { margin: 3px 0 0 0; font-size: 0.78rem; color: #475569; }
 
-        .transcript-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.72rem;
-            background: white;
-        }
-        .transcript-table th, .transcript-table td {
-            border: 1px solid #cbd5e1;
-            padding: 4px 6px;
-            vertical-align: middle;
-        }
-        .transcript-table th {
-            background-color: #f1f5f9;
-            color: var(--primary-color);
-            text-align: center;
-            font-size: 0.72rem;
-        }
+        .transcript-table { width: 100%; border-collapse: collapse; font-size: 0.72rem; background: white; }
+        .transcript-table th, .transcript-table td { border: 1px solid #cbd5e1; padding: 4px 6px; vertical-align: middle; }
+        .transcript-table th { background-color: #f1f5f9; color: var(--primary-color); text-align: center; font-size: 0.72rem; }
 
-        /* Styling Sertifikat Resmi dengan Motif Gelombang Komplit & Proporsional */
+        /* Styling Sertifikat Resmi - Presisi A4 Landscape Fit-Up & Diturunkan 3 Ketukan ke Bottom */
         .certificate-card {
             background: #fffdfa;
             border: 10px solid #1e3a8a;
             outline: 3px solid #d97706;
             outline-offset: -16px;
-            padding: 30px 40px;
-            margin-top: 15px;
+            padding: 28px 40px 32px 40px; /* Padding bawah ditambah agar isi terdorong pas ke bagian bawah */
+            margin: 15px auto;
             position: relative;
             box-sizing: border-box;
             text-align: center;
             overflow: hidden;
             width: 100%;
+            max-width: 1050px;
         }
 
         .guilloche-waves-bg {
@@ -491,7 +343,7 @@
             height: 100%;
             pointer-events: none;
             z-index: 1;
-            opacity: 0.25;
+            opacity: 0.35;
         }
 
         .cert-header-table, .cert-main-title, .cert-subtitle, .cert-body-text, .cert-recipient-name, .cert-desc, .cert-signatures-grid, div[style*="font-size: 0.78rem; color: #64748b;"] {
@@ -499,31 +351,16 @@
             z-index: 2;
         }
 
-        .cert-header-table {
-            width: 100%;
-            border: none;
-            margin-bottom: 6px;
-        }
-        .cert-header-table td {
-            border: none;
-            vertical-align: middle;
-        }
-        .cert-org-title {
-            font-size: 1.05rem;
-            font-weight: bold;
-            color: #1e3a8a;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 2px;
-        }
+        .cert-header-table { width: 100%; border: none; margin-bottom: 4px; }
+        .cert-header-table td { border: none; vertical-align: middle; }
+        .cert-org-title { font-size: 1.05rem; font-weight: bold; color: #1e3a8a; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2px; }
         
-        /* LUXURIOUS & HIGHER-LEVEL GOLD TITLE STYLING */
         .cert-main-title {
-            font-size: 2.5rem;
+            font-size: 2.4rem;
             font-weight: 900;
             font-family: 'Georgia', serif;
             letter-spacing: 4px;
-            margin: 4px 0 2px 0;
+            margin: 2px 0 1px 0;
             text-transform: uppercase;
             background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
             -webkit-background-clip: text;
@@ -532,76 +369,63 @@
             -webkit-text-stroke: 0.8px #785210;
         }
 
-        .cert-subtitle {
-            font-size: 0.85rem;
-            color: #475569;
-            font-style: italic;
-            margin-bottom: 10px;
-        }
-        .cert-body-text {
-            font-size: 0.88rem;
-            color: #334155;
-            margin-bottom: 4px;
-        }
+        .cert-subtitle { font-size: 0.82rem; color: #475569; font-style: italic; margin-bottom: 6px; }
+        .cert-body-text { font-size: 0.85rem; color: #334155; margin-bottom: 2px; }
         .cert-recipient-name {
-            font-size: 1.6rem;
+            font-size: 1.55rem;
             font-weight: bold;
             color: #1e3a8a;
             border-bottom: 2px solid #d97706;
             display: inline-block;
-            padding: 0 18px 2px 18px;
-            margin: 4px 0 10px 0;
+            padding: 0 16px 2px 16px;
+            margin: 2px 0 6px 0;
             font-family: 'Georgia', serif;
         }
+        
+        /* Deskripsi diturunkan dan diatur spasinya agar lebih elegan */
         .cert-desc {
-            font-size: 0.78rem;
-            line-height: 1.42;
+            font-size: 0.76rem;
+            line-height: 1.38;
             color: #1e293b;
-            max-width: 950px;
-            margin: 0 auto 15px auto;
+            max-width: 960px;
+            margin: 4px auto 12px auto;
             text-align: justify;
         }
+
+        /* Seksi Tanda Tangan Diturunkan 3 Ketukan Extra & Fit To Bottom */
         .cert-signatures-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 40px;
-            margin-top: 15px;
+            margin-top: 28px; /* Disesuaikan agar turun tepat 3 ketukan tambahan dan pas di bawah */
             text-align: center;
-            font-size: 0.8rem;
-            max-width: 600px;
+            font-size: 0.78rem;
+            max-width: 650px;
             margin-left: auto;
             margin-right: auto;
         }
-        .cert-sig-box {
-            padding: 2px;
-        }
-        .cert-sig-space {
-            height: 40px;
-        }
-        .cert-sig-name {
-            font-weight: bold;
-            color: #1e3a8a;
-            text-decoration: underline;
-            margin-top: 2px;
-        }
-        .cert-sig-role {
-            font-size: 0.72rem;
-            color: #475569;
-            margin-top: 2px;
+        .cert-sig-box { padding: 0; }
+        .cert-sig-space { height: 48px; } 
+        .cert-sig-name { font-weight: bold; color: #1e3a8a; text-decoration: underline; margin-top: 2px; }
+        .cert-sig-role { font-size: 0.7rem; color: #475569; margin-top: 2px; }
+
+        /* Pengaturan Khusus Print A4 Landscape Full Page */
+        @page {
+            size: A4 landscape;
+            margin: 0;
         }
 
-        /* Konfigurasi Print Landscape */
         @media print {
-            @page {
-                size: landscape;
-                margin: 6mm;
-            }
-            body {
-                background: white !important;
-                padding: 0 !important;
+            html, body {
+                width: 297mm !important;
+                height: 210mm !important;
                 margin: 0 !important;
-                width: 100% !important;
+                padding: 0 !important;
+                background: white !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
             }
+
             body > .container > *:not(#viewCertificate):not(#viewTranscript):not(#viewScoreRecap):not(#viewPractical):not(#viewGrowth):not(#viewWeekly):not(#viewJournal):not(#viewMonthly),
             .locked-header,
             .mode-nav,
@@ -617,52 +441,58 @@
             h3, p {
                 display: none !important;
             }
+
             .container {
                 box-shadow: none !important;
                 padding: 0 !important;
                 margin: 0 !important;
                 max-width: 100% !important;
-                width: 100% !important;
+                width: 297mm !important;
+                height: 210mm !important;
                 background: transparent !important;
             }
-            #viewCertificate.active-view,
-            #viewTranscript.active-view,
-            #viewScoreRecap.active-view,
-            #viewPractical.active-view,
-            #viewGrowth.active-view,
-            #viewWeekly.active-view,
-            #viewJournal.active-view,
-            #viewMonthly.active-view {
+
+            #viewCertificate.active-view {
                 display: block !important;
-                width: 100% !important;
-            }
-            
-            .certificate-card {
-                border: 8px solid #1e3a8a !important;
-                outline: 2px solid #d97706 !important;
-                outline-offset: -12px !important;
-                padding: 15px !important;
+                width: 297mm !important;
+                height: 210mm !important;
                 margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            .certificate-card {
+                border: 12px solid #1e3a8a !important;
+                outline: 4px solid #d97706 !important;
+                outline-offset: -18px !important;
+                padding: 26px 45px 30px 45px !important;
+                margin: 0 auto !important;
                 box-shadow: none !important;
                 background: #fffdfa !important;
-                -webkit-print-color-adjust: exact;
-                page-break-inside: avoid;
+                width: 297mm !important;
+                height: 210mm !important;
+                max-width: 297mm !important;
+                max-height: 210mm !important;
+                box-sizing: border-box !important;
+                page-break-inside: avoid !important;
+                page-break-after: always !important;
             }
+
             .transcript-card {
                 border: 2px solid #1e3a8a !important;
                 padding: 8px 12px !important;
                 margin: 0 !important;
                 box-shadow: none !important;
                 background: white !important;
-                -webkit-print-color-adjust: exact;
                 page-break-inside: avoid;
                 max-height: 190mm;
                 overflow: hidden;
             }
+
             .transcript-table th, .transcript-table td {
                 padding: 2px 4px !important;
                 font-size: 6.8pt !important;
             }
+
             tr { page-break-inside: avoid; }
         }
     </style>
@@ -1059,7 +889,7 @@
         </div>
 
         <div id="certificatePrintArea" class="certificate-card">
-            <!-- MOTIF LENGKAP: GARUDA, ROSET KANAN BAWAH, DAN GELOMBANG DIAGONAL OMBAK -->
+            <!-- MOTIF LENGKAP -->
             <svg class="guilloche-waves-bg" viewBox="0 0 1000 700" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <linearGradient id="waveRainbowFull" x1="0%" y1="100%" x2="100%" y2="0%">
@@ -1083,42 +913,43 @@
                 <circle cx="870" cy="560" r="50" fill="none" stroke="url(#waveRainbowFull)" stroke-width="0.9" />
             </svg>
 
-            <!-- PERBAIKAN LOGO: MENGGUNAKAN PATH RELATIF ROOT LANGSUNG & RAW GITHUB FALLBACK -->
+            <!-- LOGO INSTITUSI -->
             <table class="cert-header-table">
                 <tr>
                     <td style="width: 80px; text-align: left;">
-                        <img src="Garuda1.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/Garuda1.png';" alt="Garuda Pancasila" style="width: 65px; height: 65px; object-fit: contain;" crossorigin="anonymous" />
+                        <img src="Garuda1.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/Garuda1.png';" alt="Garuda Pancasila" style="width: 62px; height: 62px; object-fit: contain;" crossorigin="anonymous" />
                     </td>
                     <td style="text-align: center;">
-                        <div class="cert-org-title">AKADEMI KEPERAWATAN (AKPER) TEUNGKU FAKINAH BANDA ACEH & BP3MI ACEH</div>
-                        <div class="cert-subtitle" style="margin-bottom:0;">Program Peningkatan Kapasitas & Kompetensi Calon Pekerja Migran Sektor Kesehatan (640 JPL)</div>
+                        <div class="cert-org-title">AKADEMI KEPERAWATAN (AKPER) TEUNGKU FAKINAH BANDA ACEH &amp; BP3MI ACEH</div>
+                        <div class="cert-subtitle" style="margin-bottom:0;">Program Peningkatan Kapasitas &amp; Kompetensi Calon Pekerja Migran Sektor Kesehatan (640 JPL)</div>
                     </td>
                     <td style="width: 140px; text-align: right;">
                         <div style="display: flex; gap: 6px; justify-content: flex-end; align-items: center;">
-                            <img src="BP3MI.jpg" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/BP3MI.jpg';" alt="Logo BP3MI Aceh" style="width: 42px; height: 42px; object-fit: contain; border-radius: 4px;" crossorigin="anonymous" />
-                            <img src="Fakinah.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/Fakinah.png';" alt="Logo AKPER Fakinah" style="width: 42px; height: 42px; object-fit: contain; border-radius: 4px;" crossorigin="anonymous" />
+                            <img src="BP3MI.jpg" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/BP3MI.jpg';" alt="Logo BP3MI Aceh" style="width: 40px; height: 40px; object-fit: contain; border-radius: 4px;" crossorigin="anonymous" />
+                            <img src="Fakinah.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/Fakinah.png';" alt="Logo AKPER Fakinah" style="width: 40px; height: 40px; object-fit: contain; border-radius: 4px;" crossorigin="anonymous" />
                         </div>
                     </td>
                 </tr>
             </table>
 
             <div class="cert-main-title">SERTIFIKAT KELULUSAN</div>
-            <div style="font-size: 0.78rem; color: #64748b; margin-bottom: 6px;">Certificate of Completion — No: <span id="certNo">FAK/CERT/2026/XI/001</span></div>
+            <div style="font-size: 0.75rem; color: #64748b; margin-bottom: 4px;">Certificate of Completion — No: <span id="certNo">FAK/CERT/2026/XI/001</span></div>
 
             <div class="cert-body-text">Diberikan Dengan Bangga Kepada:</div>
             <div class="cert-recipient-name" id="certStudentNameDisplay">-</div>
 
             <div class="cert-desc">
-                Telah berhasil menyelesaikan seluruh rangkaian kurikulum intensif <strong>"Upgrading Skill" Peningkatan Kapasitas Calon Pekerja Migran Kesehatan 640 JPL</strong> serta Ujian Kompetensi (<strong>English for Specific Purposes: Prometric/SCFHS Simulation</strong> dengan <em>Safety First, Tie-Breaker, Linguistic Distractor</em> dan <em>NPSG</em>), <strong>Clinical Assessment</strong> (<em>Cases and "How to"</em>), & <strong>Behavioral Technic Interview Simulation</strong> dengan pencapaian rata-rata nilai akhir sebesar <strong id="certScoreDisplay" style="color:#1e3a8a;">0.0 / 100</strong> serta predikat kelulusan:
-                <div style="margin-top: 3px; text-align: center;" id="certPredicateDisplay">-</div>
+                Telah berhasil menyelesaikan seluruh rangkaian kurikulum intensif <strong>"Upgrading Skill" Peningkatan Kapasitas Calon Pekerja Migran Kesehatan 640 JPL</strong> serta Ujian Kompetensi (<strong>English for Specific Purposes: Prometric/SCFHS Simulation</strong> dengan <em>Safety First, Tie-Breaker, Linguistic Distractor</em> dan <em>NPSG</em>), <strong>Clinical Assessment</strong> (<em>Cases and "How to"</em>), &amp; <strong>Behavioral Technic Interview Simulation</strong> dengan pencapaian rata-rata nilai akhir sebesar <strong id="certScoreDisplay" style="color:#1e3a8a;">0.0 / 100</strong> serta predikat kelulusan:
+                <div style="margin-top: 2px; text-align: center;" id="certPredicateDisplay">-</div>
             </div>
 
+            <!-- SEKSI TANDA TANGAN DITURUNKAN 3 KETUKAN EXTRA & FIT TO BOTTOM -->
             <div class="cert-signatures-grid">
                 <div class="cert-sig-box">
                     <div>Disahkan Oleh:</div>
                     <div style="font-weight:bold;">Ketua Penyelenggara</div>
                     <div class="cert-sig-space"></div>
-                    <div class="cert-sig-name">Zulheri, S.KM, M.KMs</div>
+                    <div class="cert-sig-name">Zulheri, S.KM, M.KM</div>
                     <div class="cert-sig-role">Ketua Tim Pelaksana Pelatihan</div>
                 </div>
                 <div class="cert-sig-box">
@@ -1142,12 +973,12 @@
                 <input type="text" id="targetInfoBox" readonly style="width: 100%; padding: 7px; border: 1px solid #10b981; border-radius: 4px; font-size: 0.88rem; background:#f0fdf4; font-weight:bold;">
             </div>
             <div style="display: flex; gap: 8px;">
-                <button class="nav-btn" style="background:#059669; color:white;" onclick="saveAllMasterData()">🔒 Save All Master Data (Modul & Sub)</button>
+                <button class="nav-btn" style="background:#059669; color:white;" onclick="saveAllMasterData()">🔒 Save All Master Data (Modul &amp; Sub)</button>
             </div>
         </div>
 
         <div class="schedule-timeline-box" style="margin-bottom: 25px;">
-            <h4>📋 Jadwal Harian Lengkap & Kolom Sub-Pokok Bahasan</h4>
+            <h4>📋 Jadwal Harian Lengkap &amp; Kolom Sub-Pokok Bahasan</h4>
             <div style="max-height: 480px; overflow-y: auto;" id="masterTableContainer">
                 <table class="presence-table" style="font-size: 0.8rem; margin-top: 5px;">
                     <thead style="position: sticky; top: 0; background: #f1f5f9; z-index: 2;">
@@ -1178,7 +1009,7 @@
 
     <!-- VIEW JURNAL -->
     <div id="viewJournal" class="view-section">
-        <h3>📖 Jurnal KBM & Progress</h3>
+        <h3>📖 Jurnal KBM &amp; Progress</h3>
         <p style="font-size: 0.88rem; color: #475569;">Dokumen resmi jurnal capaian belajar. Sesi terkunci permanen; operator dapat mengedit ulang untuk penyesuaian JPL secara dinamis.</p>
         
         <div style="overflow-x: auto; margin-top: 15px; margin-bottom: 20px;">
@@ -1210,7 +1041,7 @@
 
     <!-- VIEW MONTHLY -->
     <div id="viewMonthly" class="view-section">
-        <h3>📊 Monthly Report & Rekapitulasi (640 JPL)</h3>
+        <h3>📊 Monthly Report &amp; Rekapitulasi (640 JPL)</h3>
         <div class="filter-report-box">
             <div style="flex: 1;">
                 <label style="font-size: 0.8rem; font-weight: bold; color: #065f46; display: block; margin-bottom: 4px;">Pilih Kompetensi / Sektor:</label>
