@@ -259,9 +259,9 @@
         }
 
         .btn-action-group { display: flex; gap: 4px; justify-content: center; margin-top: 4px; }
-        .btn-sig-save { background: #059669; color: white; border: none; padding: 3px 8px; border-radius: 3px; cursor: pointer; font-size: 0.72rem; font-weight: bold; }
-        .btn-sig-edit { background: #d97706; color: white; border: none; padding: 3px 8px; border-radius: 3px; cursor: pointer; font-size: 0.72rem; font-weight: bold; }
-        .btn-sig-clear { background: #ef4444; color: white; border: none; padding: 3px 8px; border-radius: 3px; cursor: pointer; font-size: 0.72rem; font-weight: bold; }
+        .btn-sig-save { background: #059669; color: white; border: none; padding: 3px 8px; border-radius: 3px; cursor: pointer; font-size: 0.90rem; font-weight: bold; }
+        .btn-sig-edit { background: #d97706; color: white; border: none; padding: 3px 8px; border-radius: 3px; cursor: pointer; font-size: 0.90rem; font-weight: bold; }
+        .btn-sig-clear { background: #ef4444; color: white; border: none; padding: 3px 8px; border-radius: 3px; cursor: pointer; font-size: 0.90rem; font-weight: bold; }
 
         .actions {
             display: flex;
@@ -293,7 +293,7 @@
             align-items: center;
         }
 
-        .rubric-table th, .rubric-table td { font-size: 0.78rem; padding: 6px; }
+        .rubric-table th, .rubric-table td { font-size: 0.90rem; padding: 6px; }
         .rubric-table th { background-color: #e2e8f0; }
 
         .badge-distinction { background: #dcfce7; color: #15803d; font-weight: bold; padding: 2px 6px; border-radius: 4px; font-size: 0.7rem; }
@@ -315,17 +315,17 @@
         .transcript-header-title h2 { margin: 0; color: var(--primary-color); font-size: 1.15rem; text-transform: uppercase; letter-spacing: 0.5px; }
         .transcript-header-title p { margin: 3px 0 0 0; font-size: 0.78rem; color: #475569; }
 
-        .transcript-table { width: 100%; border-collapse: collapse; font-size: 0.72rem; background: white; }
+        .transcript-table { width: 100%; border-collapse: collapse; font-size: 0.90rem; background: white; }
         .transcript-table th, .transcript-table td { border: 1px solid #cbd5e1; padding: 4px 6px; vertical-align: middle; }
-        .transcript-table th { background-color: #f1f5f9; color: var(--primary-color); text-align: center; font-size: 0.72rem; }
+        .transcript-table th { background-color: #f1f5f9; color: var(--primary-color); text-align: center; font-size: 0.90rem; }
 
-        /* Styling Sertifikat Resmi - Presisi A4 Landscape Fit-Up & Diturunkan 3 Ketukan ke Bottom */
+        /* Styling Sertifikat Resmi - Presisi A4 Landscape Fit-Up & Diturunkan 7 Ketukan ke Bottom */
         .certificate-card {
             background: #fffdfa;
             border: 10px solid #1e3a8a;
             outline: 3px solid #d97706;
             outline-offset: -16px;
-            padding: 28px 40px 32px 40px; /* Padding bawah ditambah agar isi terdorong pas ke bagian bawah */
+            padding: 28px 40px 32px 40px;
             margin: 15px auto;
             position: relative;
             box-sizing: border-box;
@@ -346,7 +346,7 @@
             opacity: 0.35;
         }
 
-        .cert-header-table, .cert-main-title, .cert-subtitle, .cert-body-text, .cert-recipient-name, .cert-desc, .cert-signatures-grid, div[style*="font-size: 0.78rem; color: #64748b;"] {
+        .cert-header-table, .cert-main-title, .cert-subtitle, .cert-body-text, .cert-recipient-name, .cert-desc, .cert-signatures-grid, div[style*="font-size: 0.90rem; color: #64748b;"] {
             position: relative;
             z-index: 2;
         }
@@ -382,9 +382,8 @@
             font-family: 'Georgia', serif;
         }
         
-        /* Deskripsi diturunkan dan diatur spasinya agar lebih elegan */
         .cert-desc {
-            font-size: 0.76rem;
+            font-size: 0.90rem;
             line-height: 1.38;
             color: #1e293b;
             max-width: 960px;
@@ -392,14 +391,13 @@
             text-align: justify;
         }
 
-        /* Seksi Tanda Tangan Diturunkan 3 Ketukan Extra & Fit To Bottom */
         .cert-signatures-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 40px;
-            margin-top: 28px; /* Disesuaikan agar turun tepat 3 ketukan tambahan dan pas di bawah */
+            margin-top: 28px;
             text-align: center;
-            font-size: 0.78rem;
+            font-size: 0.90rem;
             max-width: 650px;
             margin-left: auto;
             margin-right: auto;
@@ -418,7 +416,7 @@
         @media print {
             html, body {
                 width: 297mm !important;
-                height: 210mm !important;
+                height: 200mm !important;
                 margin: 0 !important;
                 padding: 0 !important;
                 background: white !important;
@@ -448,14 +446,14 @@
                 margin: 0 !important;
                 max-width: 100% !important;
                 width: 297mm !important;
-                height: 210mm !important;
+                height: 200mm !important;
                 background: transparent !important;
             }
 
             #viewCertificate.active-view {
                 display: block !important;
                 width: 297mm !important;
-                height: 210mm !important;
+                height: 200mm !important;
                 margin: 0 !important;
                 padding: 0 !important;
             }
@@ -469,7 +467,7 @@
                 box-shadow: none !important;
                 background: #fffdfa !important;
                 width: 297mm !important;
-                height: 210mm !important;
+                height: 200mm !important;
                 max-width: 297mm !important;
                 max-height: 210mm !important;
                 box-sizing: border-box !important;
@@ -917,13 +915,13 @@
             <table class="cert-header-table">
                 <tr>
                     <td style="width: 80px; text-align: left;">
-                        <img src="Garuda1.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/Garuda1.png';" alt="Garuda Pancasila" style="width: 62px; height: 62px; object-fit: contain;" crossorigin="anonymous" />
+                        <img src="Garuda1.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/Garuda1.png';" alt="Garuda Pancasila" style="width: 75px; height: 75px; object-fit: contain;" crossorigin="anonymous" />
                     </td>
                     <td style="text-align: center;">
                         <div class="cert-org-title">AKADEMI KEPERAWATAN (AKPER) TEUNGKU FAKINAH BANDA ACEH &amp; BP3MI ACEH</div>
                         <div class="cert-subtitle" style="margin-bottom:0;">Program Peningkatan Kapasitas &amp; Kompetensi Calon Pekerja Migran Sektor Kesehatan (640 JPL)</div>
                     </td>
-                    <td style="width: 140px; text-align: right;">
+                    <td style="width: 150px; text-align: right;">
                         <div style="display: flex; gap: 6px; justify-content: flex-end; align-items: center;">
                             <img src="BP3MI.jpg" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/BP3MI.jpg';" alt="Logo BP3MI Aceh" style="width: 40px; height: 40px; object-fit: contain; border-radius: 4px;" crossorigin="anonymous" />
                             <img src="Fakinah.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/Fakinah.png';" alt="Logo AKPER Fakinah" style="width: 40px; height: 40px; object-fit: contain; border-radius: 4px;" crossorigin="anonymous" />
@@ -933,17 +931,17 @@
             </table>
 
             <div class="cert-main-title">SERTIFIKAT KELULUSAN</div>
-            <div style="font-size: 0.75rem; color: #64748b; margin-bottom: 4px;">Certificate of Completion — No: <span id="certNo">FAK/CERT/2026/XI/001</span></div>
+            <div style="font-size: 0.95rem; color: #64748b; margin-bottom: 4px;">Certificate of Completion — No: <span id="certNo">FAK/CERT/2026/XI/001</span></div>
 
             <div class="cert-body-text">Diberikan Dengan Bangga Kepada:</div>
             <div class="cert-recipient-name" id="certStudentNameDisplay">-</div>
 
             <div class="cert-desc">
                 Telah berhasil menyelesaikan seluruh rangkaian kurikulum intensif <strong>"Upgrading Skill" Peningkatan Kapasitas Calon Pekerja Migran Kesehatan 640 JPL</strong> serta Ujian Kompetensi (<strong>English for Specific Purposes: Prometric/SCFHS Simulation</strong> dengan <em>Safety First, Tie-Breaker, Linguistic Distractor</em> dan <em>NPSG</em>), <strong>Clinical Assessment</strong> (<em>Cases and "How to"</em>), &amp; <strong>Behavioral Technic Interview Simulation</strong> dengan pencapaian rata-rata nilai akhir sebesar <strong id="certScoreDisplay" style="color:#1e3a8a;">0.0 / 100</strong> serta predikat kelulusan:
-                <div style="margin-top: 2px; text-align: center;" id="certPredicateDisplay">-</div>
+                <div style="margin-top: 3px; text-align: center;" id="certPredicateDisplay">-</div>
             </div>
 
-            <!-- SEKSI TANDA TANGAN DITURUNKAN 3 KETUKAN EXTRA & FIT TO BOTTOM -->
+            <!-- SEKSI TANDA TANGAN DITURUNKAN 7 KETUKAN EXTRA & FIT TO BOTTOM -->
             <div class="cert-signatures-grid">
                 <div class="cert-sig-box">
                     <div>Disahkan Oleh:</div>
@@ -1566,6 +1564,10 @@
 
         if(!growthStore[sectorName]) growthStore[sectorName] = {};
         growthStore[sectorName][idx] = { pre: preVal, post: postVal, direct: directVal };
+
+        // Sinkronisasi otomatis ke Transkrip & Sertifikat
+        renderIndividualTranscript();
+        renderCertificateView();
     }
 
     function saveGrowthData() {
@@ -1589,6 +1591,8 @@
         });
 
         localStorage.setItem('bp3mi_growth_store_v22', JSON.stringify(growthStore));
+        renderIndividualTranscript();
+        renderCertificateView();
         alert(`🔒 Data Pre, Post, & Direct Test untuk modul "${currentSec}" telah tersimpan permanen!`);
     }
 
@@ -1721,6 +1725,18 @@
         };
 
         localStorage.setItem('bp3mi_ncl_practical_v22', JSON.stringify(nclPracticalStore));
+
+        // Auto-update ke Direct Test jika sektor cocok dengan sektor master
+        const sIdx = students.indexOf(studentName);
+        if (sIdx !== -1 && sectorsMaster.some(s => s.name === sectorName)) {
+            if (!growthStore[sectorName]) growthStore[sectorName] = {};
+            if (!growthStore[sectorName][sIdx]) growthStore[sectorName][sIdx] = { pre: 0, post: 0, direct: 0 };
+            growthStore[sectorName][sIdx].direct = totalVal;
+            localStorage.setItem('bp3mi_growth_store_v22', JSON.stringify(growthStore));
+            renderIndividualTranscript();
+            renderCertificateView();
+        }
+
         alert(`🔒 Rubrik NCL untuk "${studentName}" pada modul "${sectorName}" telah tersimpan permanen!`);
     }
 
@@ -2082,6 +2098,7 @@
         studentPhones[idx] = phoneVal.trim();
         localStorage.setItem('bp3mi_student_phones_v22', JSON.stringify(studentPhones));
         updateOperatorReviewStatus();
+        renderIndividualTranscript();
     }
 
     function initCanvas(idx) {
@@ -2223,6 +2240,16 @@
         if(!scoreRecapStore[sectorName]) scoreRecapStore[sectorName] = {};
         if(!scoreRecapStore[sectorName][idx]) scoreRecapStore[sectorName][idx] = { score: '', sig: '' };
         scoreRecapStore[sectorName][idx].score = val;
+
+        // Auto sync ke Post Test jika sektor cocok dengan sektor master
+        if (sectorsMaster.some(s => s.name === sectorName)) {
+            if (!growthStore[sectorName]) growthStore[sectorName] = {};
+            if (!growthStore[sectorName][idx]) growthStore[sectorName][idx] = { pre: 0, post: 0, direct: 0 };
+            growthStore[sectorName][idx].post = parseFloat(val) || 0;
+            localStorage.setItem('bp3mi_growth_store_v22', JSON.stringify(growthStore));
+            renderIndividualTranscript();
+            renderCertificateView();
+        }
     }
 
     function saveScoreSig(sectorName, idx) {
@@ -2261,10 +2288,19 @@
                 if(!scoreRecapStore[currentSec]) scoreRecapStore[currentSec] = {};
                 if(!scoreRecapStore[currentSec][idx]) scoreRecapStore[currentSec][idx] = { score: '', sig: '' };
                 scoreRecapStore[currentSec][idx].score = scoreInput.value;
+
+                if (sectorsMaster.some(s => s.name === currentSec)) {
+                    if (!growthStore[currentSec]) growthStore[currentSec] = {};
+                    if (!growthStore[currentSec][idx]) growthStore[currentSec][idx] = { pre: 0, post: 0, direct: 0 };
+                    growthStore[currentSec][idx].post = parseFloat(scoreInput.value) || 0;
+                }
             }
         });
 
         localStorage.setItem('bp3mi_score_recap_v22', JSON.stringify(scoreRecapStore));
+        localStorage.setItem('bp3mi_growth_store_v22', JSON.stringify(growthStore));
+        renderIndividualTranscript();
+        renderCertificateView();
         alert(`🔒 Rekap nilai ujian untuk modul "${currentSec}" tersimpan permanen!`);
     }
 
