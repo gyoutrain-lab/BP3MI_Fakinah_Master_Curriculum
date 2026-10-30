@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistem Master Kurikulum 640 JPL & Sertifikat Motif Gelombang Lengkap</title>
     
+    <!-- Google Fonts for High-End Academic Certificate Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet">
+
     <!-- Open Graph / Social Media Thumbnail Integration -->
     <meta property="og:title" content="Sistem Master Kurikulum 640 JPL & Sertifikat Motif Gelombang Lengkap - BP3MI Aceh">
     <meta property="og:description" content="Aplikasi terintegrasi Presensi, Rekap Nilai, Penilaian Praktik NCL, Transkrip Akademik 1 Halaman, dan Sertifikat Kelulusan Resmi dengan Motif Gelombang Guilloche Proporsional.">
@@ -25,6 +30,8 @@
             --card-bg: #ffffff;
             --text-color: #1e293b;
             --border-color: #cbd5e1;
+            --gold-primary: #b8860b;
+            --gold-dark: #785210;
         }
 
         body {
@@ -319,13 +326,15 @@
         .transcript-table th, .transcript-table td { border: 1px solid #cbd5e1; padding: 4px 6px; vertical-align: middle; }
         .transcript-table th { background-color: #f1f5f9; color: var(--primary-color); text-align: center; font-size: 0.90rem; }
 
-        /* Styling Sertifikat Resmi - Presisi A4 Landscape Fit-Up & Diturunkan 7 Ketukan ke Bottom */
+        /* ==========================================================================
+           REDESIGNED LUXURY ACADEMIC CERTIFICATE (PROPORTIONAL A4 LANDSCAPE FIT)
+           ========================================================================== */
         .certificate-card {
-            background: #fffdfa;
-            border: 10px solid #1e3a8a;
-            outline: 3px solid #d97706;
+            background: #fffdf9;
+            border: 10px double #1e3a8a;
+            outline: 2px solid #b8860b;
             outline-offset: -16px;
-            padding: 28px 40px 32px 40px;
+            padding: 28px 45px;
             margin: 15px auto;
             position: relative;
             box-sizing: border-box;
@@ -333,7 +342,26 @@
             overflow: hidden;
             width: 100%;
             max-width: 1050px;
+            aspect-ratio: 297 / 210;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.12);
         }
+
+        /* Subtle & Transparent Corner Accents */
+        .cert-corner-rosette {
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            z-index: 3;
+            pointer-events: none;
+            opacity: 0.22; /* Soft, elegant transparency */
+        }
+        .cert-corner-tl { top: 18px; left: 18px; }
+        .cert-corner-tr { top: 18px; right: 18px; transform: rotate(90deg); }
+        .cert-corner-bl { bottom: 18px; left: 18px; transform: rotate(-90deg); }
+        .cert-corner-br { bottom: 18px; right: 18px; transform: rotate(180deg); }
 
         .guilloche-waves-bg {
             position: absolute;
@@ -343,71 +371,201 @@
             height: 100%;
             pointer-events: none;
             z-index: 1;
-            opacity: 0.35;
+            opacity: 0.22;
         }
 
-        .cert-header-table, .cert-main-title, .cert-subtitle, .cert-body-text, .cert-recipient-name, .cert-desc, .cert-signatures-grid, div[style*="font-size: 0.90rem; color: #64748b;"] {
+        .cert-content-wrapper {
             position: relative;
             z-index: 2;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
-        .cert-header-table { width: 100%; border: none; margin-bottom: 4px; }
+        .cert-header-table { 
+            width: 100%; 
+            border: none; 
+            margin-bottom: 4px;
+            border-bottom: 1.5px solid rgba(184, 134, 11, 0.4);
+            padding-bottom: 8px;
+        }
         .cert-header-table td { border: none; vertical-align: middle; }
-        .cert-org-title { font-size: 1.05rem; font-weight: bold; color: #1e3a8a; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2px; }
+        
+        .cert-org-title { 
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.88rem; 
+            font-weight: 700; 
+            color: #1e3a8a; 
+            text-transform: uppercase; 
+            letter-spacing: 0.8px; 
+            margin-bottom: 4px;
+            white-space: nowrap; /* Forces exact single line */
+        }
+        .cert-subtitle { 
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.78rem; 
+            color: #475569; 
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
         
         .cert-main-title {
-            font-size: 2.4rem;
+            font-size: 2.2rem;
             font-weight: 900;
-            font-family: 'Georgia', serif;
-            letter-spacing: 4px;
-            margin: 2px 0 1px 0;
+            font-family: 'Cinzel', serif;
+            letter-spacing: 5px;
+            margin: 4px 0 2px 0;
             text-transform: uppercase;
             background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            filter: drop-shadow(2px 2px 3px rgba(139, 94, 19, 0.45));
-            -webkit-text-stroke: 0.8px #785210;
+            filter: drop-shadow(1px 2px 2px rgba(120, 82, 16, 0.3));
+            -webkit-text-stroke: 0.5px #785210;
         }
 
-        .cert-subtitle { font-size: 0.82rem; color: #475569; font-style: italic; margin-bottom: 6px; }
-        .cert-body-text { font-size: 0.85rem; color: #334155; margin-bottom: 2px; }
+        /* Ornamen Corner Rosettes & Guilloche Background */
+        .cert-corner-rosette {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            z-index: 3;
+            pointer-events: none;
+        }
+        .cert-corner-tl { top: 20px; left: 20px; }
+        .cert-corner-tr { top: 20px; right: 20px; transform: rotate(90deg); }
+        .cert-corner-bl { bottom: 20px; left: 20px; transform: rotate(-90deg); }
+        .cert-corner-br { bottom: 20px; right: 20px; transform: rotate(180deg); }
+
+        .guilloche-waves-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0.28;
+        }
+
+        .cert-content-wrapper {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .cert-header-table { 
+            width: 100%; 
+            border: none; 
+            margin-bottom: 4px;
+            border-bottom: 2px solid #b8860b;
+            padding-bottom: 8px;
+        }
+        .cert-header-table td { border: none; vertical-align: middle; }
+        
+        .cert-org-title { 
+            font-family: 'Cinzel', serif;
+            font-size: 1.1rem; 
+            font-weight: 700; 
+            color: #1e3a8a; 
+            text-transform: uppercase; 
+            letter-spacing: 1.5px; 
+            margin-bottom: 3px; 
+        }
+        .cert-subtitle { 
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.8rem; 
+            color: #475569; 
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        
+        .cert-main-title {
+            font-size: 2.3rem;
+            font-weight: 900;
+            font-family: 'Cinzel', serif;
+            letter-spacing: 5px;
+            margin: 6px 0 2px 0;
+            text-transform: uppercase;
+            background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(1px 2px 3px rgba(120, 82, 16, 0.35));
+            -webkit-text-stroke: 0.6px #785210;
+        }
+
+        .cert-no-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.88rem;
+            color: #475569;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .cert-body-text { 
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.15rem; 
+            color: #334155; 
+            font-style: italic;
+            margin-bottom: 2px; 
+        }
+
         .cert-recipient-name {
-            font-size: 1.55rem;
-            font-weight: bold;
+            font-size: 1.85rem;
+            font-weight: 700;
             color: #1e3a8a;
-            border-bottom: 2px solid #d97706;
+            border-bottom: 2px solid #b8860b;
             display: inline-block;
-            padding: 0 16px 2px 16px;
-            margin: 2px 0 6px 0;
-            font-family: 'Georgia', serif;
+            padding: 0 24px 4px 24px;
+            margin: 4px auto 10px auto;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 1px;
         }
         
         .cert-desc {
-            font-size: 0.90rem;
-            line-height: 1.38;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            line-height: 1.5;
             color: #1e293b;
-            max-width: 960px;
-            margin: 4px auto 12px auto;
-            text-align: justify;
+            max-width: 920px;
+            margin: 0 auto 10px auto;
+            text-align: center;
         }
 
+        .cert-badge-container {
+            margin: 6px 0 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+
+        /* Dual Signature Section Balanced Fit to Bottom */
         .cert-signatures-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 40px;
-            margin-top: 28px;
+            gap: 60px;
+            margin-top: auto;
+            padding-top: 10px;
             text-align: center;
-            font-size: 0.90rem;
-            max-width: 650px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            max-width: 750px;
             margin-left: auto;
             margin-right: auto;
         }
         .cert-sig-box { padding: 0; }
-        .cert-sig-space { height: 48px; } 
-        .cert-sig-name { font-weight: bold; color: #1e3a8a; text-decoration: underline; margin-top: 2px; }
-        .cert-sig-role { font-size: 0.7rem; color: #475569; margin-top: 2px; }
+        .cert-sig-space { height: 42px; } 
+        .cert-sig-name { font-weight: 700; color: #1e3a8a; text-decoration: underline; margin-top: 2px; font-size: 0.92rem; }
+        .cert-sig-role { font-size: 0.75rem; color: #475569; margin-top: 2px; font-weight: 500; }
 
-        /* Pengaturan Khusus Print A4 Landscape Full Page */
+        /* ==========================================================================
+           PRECISE PRINT CSS SETUP FOR EXACT A4 LANDSCAPE PRINT (ZERO BLEED / FIT)
+           ========================================================================== */
         @page {
             size: A4 landscape;
             margin: 0;
@@ -416,7 +574,7 @@
         @media print {
             html, body {
                 width: 297mm !important;
-                height: 200mm !important;
+                height: 210mm !important;
                 margin: 0 !important;
                 padding: 0 !important;
                 background: white !important;
@@ -446,28 +604,28 @@
                 margin: 0 !important;
                 max-width: 100% !important;
                 width: 297mm !important;
-                height: 200mm !important;
+                height: 210mm !important;
                 background: transparent !important;
             }
 
             #viewCertificate.active-view {
                 display: block !important;
                 width: 297mm !important;
-                height: 200mm !important;
+                height: 210mm !important;
                 margin: 0 !important;
                 padding: 0 !important;
             }
 
             .certificate-card {
-                border: 12px solid #1e3a8a !important;
-                outline: 4px solid #d97706 !important;
+                border: 12px double #1e3a8a !important;
+                outline: 3px solid #b8860b !important;
                 outline-offset: -18px !important;
-                padding: 26px 45px 30px 45px !important;
-                margin: 0 auto !important;
+                padding: 12mm 18mm !important;
+                margin: 0 !important;
                 box-shadow: none !important;
-                background: #fffdfa !important;
+                background: #fffdf9 !important;
                 width: 297mm !important;
-                height: 200mm !important;
+                height: 210mm !important;
                 max-width: 297mm !important;
                 max-height: 210mm !important;
                 box-sizing: border-box !important;
@@ -482,7 +640,7 @@
                 box-shadow: none !important;
                 background: white !important;
                 page-break-inside: avoid;
-                max-height: 190mm;
+                max-height: 200mm;
                 overflow: hidden;
             }
 
@@ -870,10 +1028,10 @@
         </div>
     </div>
 
-    <!-- VIEW CETAK SERTIFIKAT RESMI -->
+    <!-- VIEW CETAK SERTIFIKAT RESMI (REDESIGNED PROPORTIONAL A4 LANDSCAPE) -->
     <div id="viewCertificate" class="view-section">
         <h3>📜 Cetak Sertifikat Kelulusan Resmi (Certificate of Completion)</h3>
-        <p style="font-size: 0.88rem; color: #475569;">Sertifikat penghargaan resmi dengan motif lengkap: kurva melengkung dari logo Garuda, roset di pojok kanan bawah, serta gelombang diagonal tipis.</p>
+        <p style="font-size: 0.88rem; color: #475569;">Sertifikat kelulusan resmi dengan tata letak klasik akademis yang proporsional dan muat sempurna pada kertas A4 Landscape.</p>
 
         <div class="filter-report-box">
             <div style="flex: 1; min-width: 280px;">
@@ -887,75 +1045,102 @@
         </div>
 
         <div id="certificatePrintArea" class="certificate-card">
-            <!-- MOTIF LENGKAP -->
+            <!-- SVG CORNER ACCENTS - SOFT & ELEGANT -->
+            <svg class="cert-corner-rosette cert-corner-tl" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10,10 L90,10 L90,15 L15,15 L15,90 L10,90 Z" fill="#b8860b"/>
+                <path d="M22,22 L78,22 L78,25 L25,25 L25,78 L22,78 Z" fill="#1e3a8a"/>
+                <circle cx="15" cy="15" r="4" fill="#b8860b"/>
+            </svg>
+            <svg class="cert-corner-rosette cert-corner-tr" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10,10 L90,10 L90,15 L15,15 L15,90 L10,90 Z" fill="#b8860b"/>
+                <path d="M22,22 L78,22 L78,25 L25,25 L25,78 L22,78 Z" fill="#1e3a8a"/>
+                <circle cx="15" cy="15" r="4" fill="#b8860b"/>
+            </svg>
+            <svg class="cert-corner-rosette cert-corner-bl" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10,10 L90,10 L90,15 L15,15 L15,90 L10,90 Z" fill="#b8860b"/>
+                <path d="M22,22 L78,22 L78,25 L25,25 L25,78 L22,78 Z" fill="#1e3a8a"/>
+                <circle cx="15" cy="15" r="4" fill="#b8860b"/>
+            </svg>
+            <svg class="cert-corner-rosette cert-corner-br" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10,10 L90,10 L90,15 L15,15 L15,90 L10,90 Z" fill="#b8860b"/>
+                <path d="M22,22 L78,22 L78,25 L25,25 L25,78 L22,78 Z" fill="#1e3a8a"/>
+                <circle cx="15" cy="15" r="4" fill="#b8860b"/>
+            </svg>
+
+            <!-- GUILLOCHE BACKGROUND WAVES -->
             <svg class="guilloche-waves-bg" viewBox="0 0 1000 700" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                    <linearGradient id="waveRainbowFull" x1="0%" y1="100%" x2="100%" y2="0%">
+                    <linearGradient id="waveGoldNavy" x1="0%" y1="0%" x2="100%" y2="100%">
                         <stop offset="0%" stop-color="#1e3a8a" />
-                        <stop offset="30%" stop-color="#0d9488" />
-                        <stop offset="60%" stop-color="#d97706" />
-                        <stop offset="100%" stop-color="#dc2626" />
+                        <stop offset="50%" stop-color="#b8860b" />
+                        <stop offset="100%" stop-color="#0d9488" />
                     </linearGradient>
                 </defs>
 
-                <path d="M 0,30 Q 300,-20 600,100 T 1000,150" fill="none" stroke="url(#waveRainbowFull)" stroke-width="0.9" />
-                <path d="M 0,55 Q 300,5 600,125 T 1000,175" fill="none" stroke="url(#waveRainbowFull)" stroke-width="1.2" />
+                <path d="M 0,40 Q 250,-10 500,60 T 1000,80" fill="none" stroke="url(#waveGoldNavy)" stroke-width="0.8" />
+                <path d="M 0,65 Q 250,15 500,85 T 1000,105" fill="none" stroke="url(#waveGoldNavy)" stroke-width="1.1" />
 
-                <path d="M 0,680 Q 250,480 550,320 T 1000,20" fill="none" stroke="url(#waveRainbowFull)" stroke-width="1.2" />
-                <path d="M 0,630 Q 300,430 600,270 T 1000,70" fill="none" stroke="url(#waveRainbowFull)" stroke-width="0.8" />
-                <path d="M 0,580 Q 350,380 650,220 T 1000,120" fill="none" stroke="url(#waveRainbowFull)" stroke-width="1.3" />
-                <path d="M 0,530 Q 400,330 700,170 T 1000,170" fill="none" stroke="url(#waveRainbowFull)" stroke-width="0.9" />
+                <path d="M 0,660 Q 300,480 600,350 T 1000,30" fill="none" stroke="url(#waveGoldNavy)" stroke-width="1.2" />
+                <path d="M 0,610 Q 350,430 650,300 T 1000,80" fill="none" stroke="url(#waveGoldNavy)" stroke-width="0.8" />
+                <path d="M 0,560 Q 400,380 700,250 T 1000,130" fill="none" stroke="url(#waveGoldNavy)" stroke-width="1.0" />
 
-                <circle cx="870" cy="560" r="130" fill="none" stroke="url(#waveRainbowFull)" stroke-width="0.8" stroke-dasharray="4,4" />
-                <circle cx="870" cy="560" r="90" fill="none" stroke="url(#waveRainbowFull)" stroke-width="1.2" />
-                <circle cx="870" cy="560" r="50" fill="none" stroke="url(#waveRainbowFull)" stroke-width="0.9" />
+                <circle cx="860" cy="540" r="140" fill="none" stroke="url(#waveGoldNavy)" stroke-width="0.7" stroke-dasharray="4,4" />
+                <circle cx="860" cy="540" r="100" fill="none" stroke="url(#waveGoldNavy)" stroke-width="1.1" />
+                <circle cx="860" cy="540" r="60" fill="none" stroke="url(#waveGoldNavy)" stroke-width="0.8" />
             </svg>
 
-            <!-- LOGO INSTITUSI -->
-            <table class="cert-header-table">
-                <tr>
-                    <td style="width: 80px; text-align: left;">
-                        <img src="Garuda1.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/Garuda1.png';" alt="Garuda Pancasila" style="width: 75px; height: 75px; object-fit: contain;" crossorigin="anonymous" />
-                    </td>
-                    <td style="text-align: center;">
-                        <div class="cert-org-title">AKADEMI KEPERAWATAN (AKPER) TEUNGKU FAKINAH BANDA ACEH &amp; BP3MI ACEH</div>
-                        <div class="cert-subtitle" style="margin-bottom:0;">Program Peningkatan Kapasitas &amp; Kompetensi Calon Pekerja Migran Sektor Kesehatan (640 JPL)</div>
-                    </td>
-                    <td style="width: 150px; text-align: right;">
-                        <div style="display: flex; gap: 6px; justify-content: flex-end; align-items: center;">
-                            <img src="BP3MI.jpg" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/BP3MI.jpg';" alt="Logo BP3MI Aceh" style="width: 40px; height: 40px; object-fit: contain; border-radius: 4px;" crossorigin="anonymous" />
-                            <img src="Fakinah.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/Fakinah.png';" alt="Logo AKPER Fakinah" style="width: 40px; height: 40px; object-fit: contain; border-radius: 4px;" crossorigin="anonymous" />
-                        </div>
-                    </td>
-                </tr>
-            </table>
+            <div class="cert-content-wrapper">
+                <!-- LOGO INSTITUSI & KOP HEADER -->
+                <table class="cert-header-table">
+                    <tr>
+                        <td style="width: 85px; text-align: left;">
+                            <img src="Garuda1.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/Garuda1.png';" alt="Garuda Pancasila" style="width: 65px; height: 65px; object-fit: contain;" crossorigin="anonymous" />
+                        </td>
+                        <td style="text-align: center;">
+                            <div class="cert-org-title">AKADEMI KEPERAWATAN (AKPER) TEUNGKU FAKINAH BANDA ACEH &amp; BP3MI ACEH</div>
+                            <div class="cert-subtitle">Program Peningkatan Kapasitas &amp; Kompetensi Calon Pekerja Migran Sektor Kesehatan (640 JPL)</div>
+                        </td>
+                        <td style="width: 135px; text-align: right;">
+                            <div style="display: flex; gap: 8px; justify-content: flex-end; align-items: center;">
+                                <img src="BP3MI.jpg" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/BP3MI.jpg';" alt="Logo BP3MI Aceh" style="width: 40px; height: 40px; object-fit: contain; border-radius: 4px;" crossorigin="anonymous" />
+                                <img src="Fakinah.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/Fakinah.png';" alt="Logo AKPER Fakinah" style="width: 40px; height: 40px; object-fit: contain; border-radius: 4px;" crossorigin="anonymous" />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
 
-            <div class="cert-main-title">SERTIFIKAT KELULUSAN</div>
-            <div style="font-size: 0.95rem; color: #64748b; margin-bottom: 4px;">Certificate of Completion — No: <span id="certNo">FAK/CERT/2026/XI/001</span></div>
-
-            <div class="cert-body-text">Diberikan Dengan Bangga Kepada:</div>
-            <div class="cert-recipient-name" id="certStudentNameDisplay">-</div>
-
-            <div class="cert-desc">
-                Telah berhasil menyelesaikan seluruh rangkaian kurikulum intensif <strong>"Upgrading Skill" Peningkatan Kapasitas Calon Pekerja Migran Kesehatan 640 JPL</strong> serta Ujian Kompetensi (<strong>English for Specific Purposes: Prometric/SCFHS Simulation</strong> dengan <em>Safety First, Tie-Breaker, Linguistic Distractor</em> dan <em>NPSG</em>), <strong>Clinical Assessment</strong> (<em>Cases and "How to"</em>), &amp; <strong>Behavioral Technic Interview Simulation</strong> dengan pencapaian rata-rata nilai akhir sebesar <strong id="certScoreDisplay" style="color:#1e3a8a;">0.0 / 100</strong> serta predikat kelulusan:
-                <div style="margin-top: 3px; text-align: center;" id="certPredicateDisplay">-</div>
-            </div>
-
-            <!-- SEKSI TANDA TANGAN DITURUNKAN 7 KETUKAN EXTRA & FIT TO BOTTOM -->
-            <div class="cert-signatures-grid">
-                <div class="cert-sig-box">
-                    <div>Disahkan Oleh:</div>
-                    <div style="font-weight:bold;">Ketua Penyelenggara</div>
-                    <div class="cert-sig-space"></div>
-                    <div class="cert-sig-name">Zulheri, S.KM, M.KM</div>
-                    <div class="cert-sig-role">Ketua Tim Pelaksana Pelatihan</div>
+                <div>
+                    <div class="cert-main-title">SERTIFIKAT KELULUSAN</div>
+                    <div class="cert-no-label">Certificate of Completion — No: <span id="certNo">FAK/CERT/2026/XI/001</span></div>
                 </div>
-                <div class="cert-sig-box">
-                    <div>Banda Aceh, 7 November 2026</div>
-                    <div style="font-weight:bold;">Direktur AKPER Teungku Fakinah</div>
-                    <div class="cert-sig-space"></div>
-                    <div class="cert-sig-name">Nur Asiah, S.KM, M.Pd</div>
-                    <div class="cert-sig-role">Pimpinan Institusi</div>
+
+                <div>
+                    <div class="cert-body-text">Diberikan Dengan Bangga Kepada:</div>
+                    <div class="cert-recipient-name" id="certStudentNameDisplay">-</div>
+                </div>
+
+                <div class="cert-desc">
+                    Telah berhasil menyelesaikan seluruh rangkaian kurikulum intensif <strong>"Upgrading Skill" Peningkatan Kapasitas Calon Pekerja Migran Kesehatan 640 JPL</strong> serta Ujian Kompetensi (<strong>English for Specific Purposes: Prometric/SCFHS Simulation</strong> dengan <em>Safety First, Tie-Breaker, Linguistic Distractor</em> dan <em>NPSG</em>), <strong>Clinical Assessment</strong> (<em>Cases and "How to"</em>), &amp; <strong>Behavioral Technic Interview Simulation</strong> dengan pencapaian rata-rata nilai akhir sebesar <strong id="certScoreDisplay" style="color:#1e3a8a;">0.0 / 100</strong> serta predikat kelulusan:
+                </div>
+
+                <div class="cert-badge-container" id="certPredicateDisplay">-</div>
+
+                <!-- SEKSI TANDA TANGAN DUAL GRID FIT TO BOTTOM -->
+                <div class="cert-signatures-grid">
+                    <div class="cert-sig-box">
+                        <div>Disahkan Oleh:</div>
+                        <div style="font-weight:700;">Ketua Penyelenggara</div>
+                        <div class="cert-sig-space"></div>
+                        <div class="cert-sig-name">Zulheri, S.KM, M.KM</div>
+                        <div class="cert-sig-role">Ketua Tim Pelaksana Pelatihan</div>
+                    </div>
+                    <div class="cert-sig-box">
+                        <div>Banda Aceh, 7 November 2026</div>
+                        <div style="font-weight:700;">Direktur AKPER Teungku Fakinah</div>
+                        <div class="cert-sig-space"></div>
+                        <div class="cert-sig-name">Nur Asiah, S.KM, M.Pd</div>
+                        <div class="cert-sig-role">Pimpinan Institusi</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1458,10 +1643,10 @@
         document.getElementById('certScoreDisplay').innerText = `${avgScore.toFixed(1)} / 100`;
 
         let finalPredBadge = "";
-        if(avgScore >= 85) finalPredBadge = `<span class="badge-distinction" style="font-size:0.85rem; padding:3px 8px;">SANGAT MEMUASKAN (DISTINCTION)</span>`;
-        else if(avgScore >= 75) finalPredBadge = `<span class="badge-merit" style="font-size:0.85rem; padding:3px 8px;">MEMUASKAN (MERIT)</span>`;
-        else if(avgScore >= 65) finalPredBadge = `<span class="badge-pass" style="font-size:0.85rem; padding:3px 8px;">LULUS (PASS)</span>`;
-        else finalPredBadge = `<span class="badge-need" style="font-size:0.85rem; padding:3px 8px;">PERLU BIMBINGAN</span>`;
+        if(avgScore >= 85) finalPredBadge = `<span class="badge-distinction" style="font-size:0.85rem; padding:4px 12px; letter-spacing:0.5px;">SANGAT MEMUASKAN (DISTINCTION)</span>`;
+        else if(avgScore >= 75) finalPredBadge = `<span class="badge-merit" style="font-size:0.85rem; padding:4px 12px; letter-spacing:0.5px;">MEMUASKAN (MERIT)</span>`;
+        else if(avgScore >= 65) finalPredBadge = `<span class="badge-pass" style="font-size:0.85rem; padding:4px 12px; letter-spacing:0.5px;">LULUS (PASS)</span>`;
+        else finalPredBadge = `<span class="badge-need" style="font-size:0.85rem; padding:4px 12px; letter-spacing:0.5px;">PERLU BIMBINGAN</span>`;
 
         document.getElementById('certPredicateDisplay').innerHTML = finalPredBadge;
     }
@@ -1565,7 +1750,6 @@
         if(!growthStore[sectorName]) growthStore[sectorName] = {};
         growthStore[sectorName][idx] = { pre: preVal, post: postVal, direct: directVal };
 
-        // Sinkronisasi otomatis ke Transkrip & Sertifikat
         renderIndividualTranscript();
         renderCertificateView();
     }
@@ -1726,7 +1910,6 @@
 
         localStorage.setItem('bp3mi_ncl_practical_v22', JSON.stringify(nclPracticalStore));
 
-        // Auto-update ke Direct Test jika sektor cocok dengan sektor master
         const sIdx = students.indexOf(studentName);
         if (sIdx !== -1 && sectorsMaster.some(s => s.name === sectorName)) {
             if (!growthStore[sectorName]) growthStore[sectorName] = {};
@@ -2241,7 +2424,6 @@
         if(!scoreRecapStore[sectorName][idx]) scoreRecapStore[sectorName][idx] = { score: '', sig: '' };
         scoreRecapStore[sectorName][idx].score = val;
 
-        // Auto sync ke Post Test jika sektor cocok dengan sektor master
         if (sectorsMaster.some(s => s.name === sectorName)) {
             if (!growthStore[sectorName]) growthStore[sectorName] = {};
             if (!growthStore[sectorName][idx]) growthStore[sectorName][idx] = { pre: 0, post: 0, direct: 0 };
