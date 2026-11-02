@@ -467,7 +467,6 @@
             margin-bottom: 6px;
         }
 
-        /* Penyesuaian blok penerima sertifikat ke bawah (turun 5 ketukan / ~32px) */
         .cert-recipient-block {
             margin-top: 32px;
         }
@@ -511,7 +510,6 @@
             gap: 10px;
         }
 
-        /* Dual Signature Section Fit to Bottom */
         .cert-signatures-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -530,9 +528,7 @@
         .cert-sig-name { font-weight: 700; color: #1e3a8a; text-decoration: underline; margin-top: 2px; font-size: 0.92rem; }
         .cert-sig-role { font-size: 0.75rem; color: #475569; margin-top: 2px; font-weight: 600; }
 
-        /* ==========================================================================
-           PRECISE PRINT CSS SETUP FOR EXACT A4 LANDSCAPE PRINT (ZERO BLEED / FIT)
-           ========================================================================== */
+        /* PRECISE PRINT CSS SETUP */
         @page {
             size: A4 landscape;
             margin: 0;
@@ -993,13 +989,13 @@
                     <div>Banda Aceh, 7 November 2026</div>
                     <div style="font-weight:bold;">Bagian Akademik</div>
                     <div style="height:35px;"></div>
-                    <div style="font-weight:bold; text-decoration:underline;">Rizkia Funna, S.Kep</div>
+                    <div style="font-weight:bold; text-decoration:underline;">Rizkia Funna, M.Kep.</div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- VIEW CETAK SERTIFIKAT RESMI (3 LOGOS INTACT, SINGLE LINE HEADER & RECIPIENT SPACING ADJUSTED) -->
+    <!-- VIEW CETAK SERTIFIKAT RESMI -->
     <div id="viewCertificate" class="view-section">
         <h3>📜 Cetak Sertifikat Kelulusan Resmi (Certificate of Completion)</h3>
         <p style="font-size: 0.88rem; color: #475569;">Sertifikat kelulusan resmi dengan tata letak klasik akademis yang proporsional dan muat sempurna pada kertas A4 Landscape.</p>
@@ -1016,7 +1012,7 @@
         </div>
 
         <div id="certificatePrintArea" class="certificate-card">
-            <!-- SVG CORNER ACCENTS - SUBTLE & TRANSPARENT GOLD (OPACITY 0.25) -->
+            <!-- SVG CORNER ACCENTS -->
             <svg class="cert-corner-rosette cert-corner-tl" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10,10 L90,10 L90,15 L15,15 L15,90 L10,90 Z" fill="#b8860b"/>
                 <path d="M22,22 L78,22 L78,25 L25,25 L25,78 L22,78 Z" fill="#1e3a8a"/>
@@ -1038,7 +1034,7 @@
                 <circle cx="15" cy="15" r="4" fill="#b8860b"/>
             </svg>
 
-            <!-- GUILLOCHE BACKGROUND WAVES (OPACITY 0.18) -->
+            <!-- GUILLOCHE BACKGROUND WAVES -->
             <svg class="guilloche-waves-bg" viewBox="0 0 1000 700" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <linearGradient id="waveGoldNavy" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -1061,20 +1057,20 @@
             </svg>
 
             <div class="cert-content-wrapper">
-                <!-- LOGO INSTITUSI & KOP HEADER (3 LOGOS INTACT & SINGLE LINE TITLE) -->
+                <!-- LOGO INSTITUSI & KOP HEADER -->
                 <table class="cert-header-table">
                     <tr>
                         <td style="width: 85px; text-align: left;">
                             <img src="Garuda1.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/Garuda1.png';" alt="Garuda Pancasila" style="width: 75px; height: 75px; object-fit: contain;" crossorigin="anonymous" />
                         </td>
-                        <td style="text-align: center; padding: 0 10px;">
+                        <td style="text-align: center; padding: 0 1px;">
                             <div class="cert-org-title">AKADEMI KEPERAWATAN (AKPER) TEUNGKU FAKINAH BANDA ACEH &amp; BP3MI ACEH</div>
                             <div class="cert-subtitle">Program Peningkatan Kapasitas &amp; Kompetensi Calon Pekerja Migran Sektor Kesehatan (640 JPL)</div>
                         </td>
-                        <td style="width: 110px; text-align: right;">
+                        <td style="width: 120px; text-align: right;">
                             <div style="display: flex; gap: 6px; justify-content: flex-end; align-items: center;">
-                                <img src="BP3MI.jpg" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/BP3MI.jpg';" alt="Logo BP3MI Aceh" style="width: 60px; height: 60px; object-fit: contain; border-radius: 4px;" crossorigin="anonymous" />
-                                <img src="Fakinah.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/Fakinah.png';" alt="Logo AKPER Fakinah" style="width: 40px; height: 40px; object-fit: contain; border-radius: 4px;" crossorigin="anonymous" />
+                                <img src="BP3MI.jpg" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/BP3MI.jpg';" alt="Logo BP3MI Aceh" style="width: 80px; height: 80px; object-fit: contain; border-radius: 4px;" crossorigin="anonymous" />
+                                <img src="Fakinah.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/gyoutrain-lab/BP3MI_Fakinah_Master_Curriculum/main/Fakinah.png';" alt="Logo AKPER Fakinah" style="width: 50px; height: 50px; object-fit: contain; border-radius: 4px;" crossorigin="anonymous" />
                             </div>
                         </td>
                     </tr>
@@ -1082,10 +1078,9 @@
 
                 <div>
                     <div class="cert-main-title">SERTIFIKAT KELULUSAN</div>
-                    <div class="cert-no-label">Certificate of Completion — No: <span id="certNo">FAK/CERT/2026/XI/001</span></div>
+                    <div class="cert-no-label">Certificate of Completion — No: <span id="certNo">001/DIR/ATF/XII/2026</span></div>
                 </div>
 
-                <!-- BLOK PENERIMA DENGAN MARGIN ATAS LIMA KETUKAN (MENGISI SPACE TENGAH) -->
                 <div class="cert-recipient-block">
                     <div>
                         <div class="cert-body-text">Diberikan Dengan Bangga Kepada:</div>
@@ -1099,21 +1094,20 @@
                     <div class="cert-badge-container" id="certPredicateDisplay">-</div>
                 </div>
 
-                <!-- SEKSI TANDA TANGAN DUAL GRID FIT TO BOTTOM -->
                 <div class="cert-signatures-grid">
                     <div class="cert-sig-box">
                         <div>Disahkan Oleh:</div>
-                        <div style="font-weight:700;">Ketua Penyelenggara</div>
+                        <div style="font-weight:700;">Ketua Pelaksana</div>
                         <div class="cert-sig-space"></div>
-                        <div class="cert-sig-name">Zulheri, S.KM, M.KM</div>
-                        <div class="cert-sig-role">Ketua Tim Pelaksana Pelatihan</div>
+                        <div class="cert-sig-name">Zulheri, S.K.M, M.K.M</div>
+                        <div class="cert-sig-role">NUPTK: 7433766667130652</div>
                     </div>
                     <div class="cert-sig-box">
                         <div>Banda Aceh, 7 November 2026</div>
                         <div style="font-weight:700;">Direktur AKPER Teungku Fakinah</div>
                         <div class="cert-sig-space"></div>
-                        <div class="cert-sig-name">Nur Asiah, S.KM, M.Pd</div>
-                        <div class="cert-sig-role">Pimpinan Institusi</div>
+                        <div class="cert-sig-name">Nur Asiah, S.K.M, M.Pd.</div>
+                        <div class="cert-sig-role">NUPTK: 54627546552300092i</div>
                     </div>
                 </div>
             </div>
@@ -1603,7 +1597,7 @@
         const idx = students.indexOf(studentName);
 
         document.getElementById('certStudentNameDisplay').innerText = studentName;
-        document.getElementById('certNo').innerText = `FAK/CERT/2026/XI/${String(idx + 1).padStart(3, '0')}`;
+        document.getElementById('certNo').innerText = `${String(idx + 1).padStart(3, '0')}/DIR/ATF/XII/2026`;
 
         let grandScoreSum = 0;
         sectorsMaster.forEach(sec => {
